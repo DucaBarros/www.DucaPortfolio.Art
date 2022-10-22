@@ -1,0 +1,114 @@
+/*General CSS TAG*/
+
+* {
+    margin: 0.1;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+
+body {
+    background: linear-gradient(217deg, #090b1dcc, #00040ab0 85.75%),
+                linear-gradient(127deg, #0d1224cc, #1f20207e 85.75%),
+                linear-gradient(336deg, #1b329bf3, #196591af 85.75%);
+    
+    font-size: 100%;
+    color: aliceblue;
+    display: block;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #55eb10ce;
+
+}
+
+h3 {
+    font-family: 'Alkalami';
+    color:#55eb10ce;
+    padding-bottom: 1%;
+}
+
+h4 {
+    text-align: center;
+}
+
+header {
+    border-bottom: 2px solid #55eb10ce;
+
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+p:hover {
+    color: #10ebe0ce;
+    size: 14px;
+    font-weight: 800;
+    background-color: #05031fc5;
+}
+
+/*Class CSS TAG*/
+
+.header {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 5%;
+    justify-content: center;
+    margin: 20px;  
+}
+
+.headerlink {
+    color: #8e959b;
+}
+
+.headerlink:hover {
+    color: #10ebe0ce;
+    text-decoration: underline;
+    display: block;
+}
+
+.body-content {
+    align-items:center;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+footer {
+    display: flex;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 11px;
+    gap: 10px;
+    justify-content: center;
+    margin: 5px;
+}
+
+.mypic {
+    border-radius: 50%;
+    width: 350px;
+}
+
+.quemsou {
+    display:block;
+    text-align: justify;
+}
+
+.txtcomun {
+    flex-direction: column;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 11px;
+    color: #7b8b92;
+    letter-spacing: 2px;
+    padding: 2%;
+}
