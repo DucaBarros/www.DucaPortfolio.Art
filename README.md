@@ -1,5 +1,5 @@
 # MyPortfolioWebsite
-That's my portfolio website I'm making along the way of learning HTML, CCS and JavaSript.
+That's my portfolio website I'm making along the way of learning HTML5, CCS3, JavaSript and Github.
 
 > Implementing News Features on November.
 
