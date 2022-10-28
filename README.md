@@ -1,5 +1,7 @@
 # MyPortfolioWebsite
-That's my portfolio website I'm making along the way of learning HTML, CCS ans JS
+That's my portfolio website I'm making along the way of learning HTML, CCS and JavaSript.
+
+> Implementing News Features on November.
 
 # My Portfolio Web Site
 
@@ -8,3 +10,4 @@ That's my portfolio website I'm making along the way of learning HTML, CCS ans J
 | [Home](http://www.ducaportfolio.art/index) |
 [My Resume](http://www.ducaportfolio.art/curriculo) |
 [My Protfolio](http://www.ducaportfolio.art/portifolio) |
+[Blog]()
