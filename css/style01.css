@@ -1,0 +1,229 @@
+/*General CSS TAG*/
+
+* {
+    margin: 0;
+    box-sizing:none;
+    text-decoration: none;
+    resize: none;
+}
+
+html {
+    background: linear-gradient(217deg, #090b1dcc, #00040ab0 85.75%),
+                linear-gradient(127deg, #0d1224cc, #1f20207e 85.75%),
+                linear-gradient(336deg, #1b329bf3, #196591af 85.75%);
+    font-size: 100%;
+    color: aliceblue;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: larger;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #55eb10ce;
+    padding-bottom: 2%;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#10ebd9ce;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+h3 {
+    font-family: 'Alkalami';
+    color:#55eb10ce;
+    padding-bottom: 2%;
+}
+
+h4 {
+    font-family: 'Alkalami';
+    color: #f2ff43;
+}
+
+header {
+    border-bottom: 2px solid #55eb10ce;
+
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+
+footer {
+    display: flex;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 11px;
+    gap: 10px;
+    justify-content: center;
+    margin: 5px;
+    border-top: 2px solid #55eb10ce;
+}
+
+strong {
+    color: #9cf8a4;
+}
+
+li {
+    font-size: small;
+    padding: 1%;
+}
+
+/*Class CSS TAG*/
+
+.header {
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing:border-box;
+}
+
+.selected-link {
+    color: #eaf17e;
+    cursor:default;
+}
+
+.no-link {
+    color: #8e959b;
+    cursor:default;
+}
+
+.headerlink {
+    color: #8e959b;
+}
+
+.headerlink:hover {
+    color: #10ebe0ce;
+    text-decoration: underline;
+    display: block;
+}
+
+.flag-link { 
+    padding-block: 2px;
+    margin-right: -28px;
+    display: flex;
+    resize: none;
+    align-items:center;
+    justify-content:center;
+    flex-direction: row;
+    gap: 0%;
+}
+
+  /*Fonte:https://codepen.io/flatpixels/pen/MWYEqdy?editors=0100*/
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 1%;
+    padding: 1px 0;
+    color: #e8f767ce;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+  }
+
+  .bar_content {
+    font-style: italic;
+    display:flex; /* Important to give the content a width */
+    width: 100%;
+    transform: translateX(100%); /* Animation start out of the screen */
+  
+    /* Add the animation */
+    animation: move 20s linear infinite /* infinite make reapeat the animation indefinitely */;
+  }
+  
+  /* Create the animation */
+  @keyframes move {
+    to { transform: translateX(-100%); }
+  }
+
+.conteudo-geral {
+    width: 50%;
+    margin-left: 25%;
+    display: block;
+    resize: none;
+}
+
+.secao-conteudo1 {
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: row;
+    gap: 5%;
+    text-align: center;
+}
+
+.secao-conteudo-central {
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 28px;
+    letter-spacing: 15%;
+}
+
+.secao-conteudo2 {
+    background-color: #0b052b77;
+    border-radius: 2%;
+    padding: 20px;
+    margin: 5%;
+    display: flex;
+    align-items:stretch;
+    justify-content:center;
+    flex-direction: row;
+    gap: 7%;
+    text-align: left;
+    height: max-content;
+    padding-bottom: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.secao-conteudo2a {
+    height: 50%;
+    width: 50%;
+}
+
+.secao-inferior {
+    padding: 1%;
+    margin: 0;
+    display: flex;
+    align-items:stretch;
+    justify-content:center;
+    flex-direction: row;
+    text-align: center;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: small;
+}
+
+.rodape-links {
+    padding: 20px;
+    margin: 0;
+}
+
+.mypic {
+    opacity: 1;
+    border-radius: 50%;
+    /*width: 350px;*/
+    width: 250px;
+}
+
+.quemsou {
+    display:block;
+    text-align: justify;
+}
+
+
+
