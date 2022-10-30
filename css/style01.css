@@ -149,7 +149,8 @@ li {
   }
 
 .conteudo-geral {
-    width: 50%;
+    width: 45rem;
+    height: 65rem;
     margin-left: 25%;
     display: block;
     resize: none;
