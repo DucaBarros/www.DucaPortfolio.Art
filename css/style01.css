@@ -1,5 +1,9 @@
 /*General CSS TAG*/
 
+:root {
+    color:#fff;
+}
+
 * {
     margin: 0;
     box-sizing:none;
