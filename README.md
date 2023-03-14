@@ -11,3 +11,6 @@ That's my portfolio website I'm making along the way of learning HTML5, CCS3, Ja
 [My Resume](http://www.ducaportfolio.art/curriculo) |
 [My Protfolio](http://www.ducaportfolio.art/portifolio) |
 [Blog]()
+
+Deployed on:
+https://app.netlify.com/teams/ducabarros/overview
