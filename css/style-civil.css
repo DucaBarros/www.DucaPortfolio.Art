@@ -5,12 +5,13 @@
 
 .container_images {
     display: flex;
+    justify-content: center;
 }
 
 .building {
     display: flex;
     justify-content: center;
-    background-image: url(/www.DucaPortfolio.Art/img/building_01.png);
+    background-image: url();
     height: 500px;
     width: 300px;
     background-position: center;
@@ -18,21 +19,24 @@
 }
 
 .construction {
-    margin: auto;
-    margin-top: 20px;
-    padding: 50px;
+    margin-top: 10px;
+    padding: 10%;
     background-image: url(/www.DucaPortfolio.Art/img/under_construction_02.png);
-    height: 258px;
-    width: 200px;
-    background-position: center;
-    background-size:cover;
-    object-fit:contain;
+    opacity: 80%;
+    height: auto;
+    width: auto;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+img {
+
 }
 
 .texto_msg {
     display: flex;
     justify-content: center;
-    margin: 10px auto;
+    margin: 5px auto;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 }
