@@ -74,6 +74,11 @@ strong {
     color: #9cf8a4;
 }
 
+a {
+    text-decoration: none;
+    color: #9cf8a4;
+}
+
 li {
     font-size: small;
     padding: 1%;
