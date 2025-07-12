@@ -1,0 +1,15 @@
+
+* {
+    margin: 0;
+    box-sizing:none;
+    text-decoration: none;
+    resize: none;
+}
+
+html {
+    background: linear-gradient(217deg, #090b1dcc, #00040ab0 85.75%),
+                linear-gradient(127deg, #0d1224cc, #1f20207e 85.75%),
+                linear-gradient(336deg, #1b329bf3, #196591af 85.75%);
+    font-size: 100%;
+    color: aliceblue;
+}
