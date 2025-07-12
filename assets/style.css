@@ -1,15 +1,111 @@
 
-* {
+*{
     margin: 0;
     box-sizing:none;
     text-decoration: none;
     resize: none;
+    font-size: 100%;
 }
 
-html {
-    background: linear-gradient(217deg, #090b1dcc, #00040ab0 85.75%),
-                linear-gradient(127deg, #0d1224cc, #1f20207e 85.75%),
-                linear-gradient(336deg, #1b329bf3, #196591af 85.75%);
-    font-size: 100%;
+body {
+    background: #010729f6;
     color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.em-construcao {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(228, 231, 45);
+    font-size: 200%;
+}
+
+a {
+    color: yellow;
+    text-decoration-color: yellow;
+}
+
+/*---------------------------------------------------------------------------------------------
+                                    class: content-middle
+---------------------------------------------------------------------------------------------*/
+
+.content-middle {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.duca-select-language {
+        top: 50%;
+        width: 35%;
+}
+
+.icon-flag-1, .icon-flag-2 {
+    position: absolute;
+    width: 11%;   /* ajuste de largura da imagem */
+    height: 20%;  /* ajuste de altura da imagem */
+    filter: grayscale(1); /* deixa em preto e branco */
+    transition: filter 0.3s;
+}
+
+.icon-flag-1:hover,
+.icon-flag-2:hover {
+    filter: grayscale(0) saturate(1.5); /* colorido e mais saturado ao passar o mouse */
+    box-shadow: blue 30px 30 px;
+}
+
+.icon-flag-1 {
+    top: 52%;   /* ajuste de posição bandeira usa*/
+    left: 37%; /* ajuste de posição bandeira usa*/
+}
+
+.icon-flag-1:hover {
+        filter: drop-shadow(0px 20px 40px rgba(170, 8, 8, 0.911));
+}
+
+.icon-flag-2 {
+    top: 52%;   /* ajuste de posição bandeira brasil*/
+    right: 37%; /* ajuste de posição bandeira brasil*/
+}
+
+.icon-flag-2:hover {
+        filter: drop-shadow(0px 20px 40px rgba(22, 170, 8, 0.911));
+}
+
+.social-media-logo:hover {
+        filter: drop-shadow(0px 3px 15px rgba(15, 164, 184, 0.911));
+}
+
+/*---------------------------------------------------------------------------------------------
+                                    class: content-bottom
+---------------------------------------------------------------------------------------------*/
+
+.content-bottom {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+/*---------------------------------------------------------------------------------------------
+                                            footer
+---------------------------------------------------------------------------------------------*/
+
+.copyright {
+    padding: 5px;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
 }
