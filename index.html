@@ -3,43 +3,1087 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome | Bem-vindo(a)</title>
+    <title>Eduardo Barros | Portfolio </title>
     <link rel="stylesheet" href="assets/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Silkscreen&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00ff9d',
+                        secondary: '#007bff',
+                        dark: {
+                            bg: '#0a0a0f',
+                            card: '#1a1b2e',
+                            text: '#e0e6ed'
+                        },
+                        light: {
+                            bg: '#f8f9fa',
+                            card: '#ffffff',
+                            text: '#1f2937'
+                        }
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    },
+                    fontFamily: {
+                        'orbitron': ['Orbitron', 'monospace'],
+                        'rajdhani': ['Rajdhani', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+   
 </head>
-<body>
-    <header>
-        <!--------------------------------top menu-------------------------------->
-        <nav class="header">
-
+<body class="theme-dark font-rajdhani">
+    <div id="particles-container" class="fixed inset-0 pointer-events-none z-0"></div>
+    
+    <header class="fixed top-0 w-full z-50 glass-effect">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-medium font-bold text-primary">
+                    <span class="font-['Pacifico']">Duca Portfolio.Art</span>
+                    
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-white hover:text-primary transition-colors">
+                        <span class="en">Home</span>
+                        <span class="pt hidden">Início</span>
+                    </a>
+                    <a href="#about" class="nav-link text-white hover:text-primary transition-colors">
+                        <span class="en">About</span>
+                        <span class="pt hidden">Sobre</span>
+                    </a>
+                    <a href="#projects" class="nav-link text-white hover:text-primary transition-colors">
+                        <span class="en">Projects</span>
+                        <span class="pt hidden">Projetos</span>
+                    </a>
+                    <a href="#skills" class="nav-link text-white hover:text-primary transition-colors">
+                        <span class="en">Skills</span>
+                        <span class="pt hidden">Habilidades</span>
+                    </a>
+                    <a href="#resume" class="nav-link text-white hover:text-primary transition-colors">
+                        <span class="en">Resume</span>
+                        <span class="pt hidden">Currículo</span>
+                    </a>
+                    <a href="#contact" class="nav-link text-white hover:text-primary transition-colors">
+                        <span class="en">Contact</span>
+                        <span class="pt hidden">Contato</span>
+                    </a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button id="lang-toggle" class="w-10 h-10 flex items-center justify-center text-white hover:text-primary transition-colors">
+                        <i class="ri-global-line ri-lg"></i>
+                    </button>
+                    <button id="theme-toggle" class="w-10 h-10 flex items-center justify-center text-white hover:text-primary transition-colors">
+                        <i class="ri-sun-line ri-lg"></i>
+                    </button>
+                    <button id="mobile-menu" class="md:hidden w-10 h-10 flex items-center justify-center text-white hover:text-primary transition-colors">
+                        <i class="ri-menu-line ri-lg"></i>
+                    </button>
+                </div>
+            </div>
         </nav>
     </header>
+
     <main>
-        <!--------------------------------main content-------------------------------->
-        <section class="content-top">
-            <div>
-    
+        <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 matrix-bg"></div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <div class="mb-8">
+                    <div class="w-48 h-48 mx-auto mb-8 hex-clip overflow-hidden neon-glow">
+                        <img src="img/duca-picture-01.png" alt="Foto Duca" class="w-full h-full object-cover object-top">
+                    </div>
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold mb-4 text-primary typewriter">
+                    Eduardo Barros
+                </h1>
+                
+                <p class="text-1xl mb-8 text-gray-300">
+                    <span class="en">Software Engineer Undergraduate | Cibersecurity Enthusiast</span>
+                    <span class="pt hidden">Acadêmico em Engenharia de Software | Entusiasta em Cibersegurança</span>
+                </p>
+                
+                <div class="flex justify-center space-x-6 mb-12">
+                    <div class="floating w-16 h-16 flex items-center justify-center bg-primary/20 rounded-full">
+                        <i class="ri-graduation-cap-line ri-2x text-primary"></i>
+                    </div>
+                    <div class="floating w-16 h-16 flex items-center justify-center bg-primary/20 rounded-full" style="animation-delay: 1s">
+                        <i class="ri-code-line ri-2x text-primary"></i>
+                    </div>
+                    <div class="floating w-16 h-16 flex items-center justify-center bg-primary/20 rounded-full" style="animation-delay: 2s">
+                        <i class="ri-robot-line ri-2x text-primary"></i>
+                    </div>
+                </div>
+                
+                <button class="bg-primary text-black px-8 py-4 !rounded-button font-semibold hover:bg-primary/80 transition-colors whitespace-nowrap">
+                    <span class="en">Explore My Universe</span>
+                    <span class="pt hidden">Explore Meu Universo</span>
+                </button>
             </div>
         </section>
-        <section class="content-middle">
-            <div class="image-container">
-                <a href="eng/home.html"><img class="icon-flag-1" src="img/flag_usa_color.png" alt="English" /></a>
-                <a href="pt-br/inicio.html"><img class="icon-flag-2" src="img/flag_brazil_color.png" alt="Português" /></a>
-                <picture class="picture-container">
-                    <img title="Select your language" name="duca-select-language" src="img/select-language.png" />
-                </picture>
+
+        <section id="about" class="py-20 bg-dark-card">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-orbitron font-bold text-center mb-16 text-primary">
+                    <span class="en">About the Developer</span>
+                    <span class="pt hidden">Sobre o Desenvolvedor</span>
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-lg mb-6 text-gray-300">
+                            <span class="en">
+                                Like Neo discovering the Matrix, I'm constantly exploring new dimensions of technology. 
+                                Currently pursuing Software Engineering while diving deep into the realms of programming and falling in love with cybersecurity.
+                            </span>
+                            <span class="pt hidden">
+                                Como Neo descobrindo a Matrix, estou constantemente explorando novas dimensões da tecnologia. 
+                                Atualmente cursando Engenharia de Software, mergulhando profundamente nos domínios da programação e me apaixonando por cibersegurança.
+                            </span>
+                        </p>
+                        
+                        <p class="text-lg mb-6 text-gray-300">
+                            <span class="en">
+                                My journey began with HTML, CSS, and JavaScript - the triad chord of web development that strikes a perfect harmony, turning simple pages into fully interactive experiences. 
+                                Now I'm wielding Python like a lightsaber, crafting AI solutions that would make even JARVIS proud.
+                            </span>
+                            <span class="pt hidden">
+                                Minha jornada começou com HTML, CSS e JavaScript - a tríade do desenvolvimento web que cria a harmonia perfeita, transformando páginas simples em experiências totalmente interativas. 
+                                Agora estou empunhando Python como um sabre de luz, criando soluções de IA que deixariam até o JARVIS orgulhoso.
+                            </span>
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-8 h-8 flex items-center justify-center bg-primary/20 rounded-full">
+                                    <i class="ri-graduation-cap-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-300">
+                                    <span class="en">Software Engineering Student</span>
+                                    <span class="pt hidden">Estudante de Engenharia de Software</span>
+                                </span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-8 h-8 flex items-center justify-center bg-primary/20 rounded-full">
+                                    <i class="ri-brain-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-300">
+                                    <span class="en">AI & Cibersecurity Enthusiast</span>
+                                    <span class="pt hidden">Entusiasta em IA e Cibersegurança</span>
+                                </span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-8 h-8 flex items-center justify-center bg-primary/20 rounded-full">
+                                    <i class="ri-gamepad-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-300">
+                                    <span class="en">Pop Culture & Gaming Nerd</span>
+                                    <span class="pt hidden">Nerd de Cultura Pop e Games</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <img src="/img/pic001_matrix.png" alt="Workspace" class="w-full rounded-lg neon-glow object-cover object-top">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-card/50 to-transparent rounded-lg"></div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="content-bottom">
-            <div>             
+
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-orbitron font-bold text-center mb-16 text-primary">
+                    <span class="en">Project Gallery</span>
+                    <span class="pt hidden">Galeria de Projetos</span>
+                </h2>
+                
+                <div class="flex justify-center mb-12">
+                    <div class="flex space-x-4 bg-dark-card p-2 rounded-full">
+                        <button class="filter-btn active px-6 py-2 rounded-full bg-primary text-black font-semibold whitespace-nowrap" data-filter="all">
+                            <span class="en">All</span>
+                            <span class="pt hidden">Todos</span>
+                        </button>
+                        <button class="filter-btn px-6 py-2 rounded-full text-gray-300 hover:text-primary transition-colors whitespace-nowrap" data-filter="web">
+                            <span class="en">Web Dev</span>
+                            <span class="pt hidden">Web Dev</span>
+                        </button>
+                        <button class="filter-btn px-6 py-2 rounded-full text-gray-300 hover:text-primary transition-colors whitespace-nowrap" data-filter="ai">
+                            <span class="en">Cibersecurity<pan>
+                            <span class="pt hidden">Cibersegurança</span>
+                        </button>
+                        <button class="filter-btn px-6 py-2 rounded-full text-gray-300 hover:text-primary transition-colors whitespace-nowrap" data-filter="python">
+                            Python
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="project-card h-80 relative cursor-pointer" data-category="web">
+                        <div class="card-front bg-dark-card rounded-lg p-6 h-full">
+                            <img src="/img/tc_webdev_01.png" alt="Web Project" class="w-full h-32 object-cover object-top rounded mb-4">
+                            <h3 class="text-xl font-semibold mb-2 text-primary">
+                                <span class="en">Responsive Web Page</span>
+                                <span class="pt hidden">Website Responsivo</span>
+                            </h3>
+                            <p class="text-gray-300 text-sm">
+                                <span class="en">Modern web application built with HTML, CSS, and JavaScript</span>
+                                <span class="pt hidden">Aplicação web moderna construída com HTML, CSS e JavaScript</span>
+                            </p>
+                        </div>
+                        <div class="card-back bg-primary/10 rounded-lg p-6 h-full flex flex-col justify-center">
+                            <h3 class="text-xl font-semibold mb-4 text-primary">
+                                <span class="en">Tech Stack</span>
+                                <span class="pt hidden">Tecnologias</span>
+                            </h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">HTML5</span>
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <button class="bg-primary text-black px-4 py-2 !rounded-button text-sm font-semibold whitespace-nowrap">
+                                    <span class="en">View Code</span>
+                                    <span class="pt hidden">Ver Código</span>
+                                </button>
+                                <button class="border border-primary text-primary px-4 py-2 !rounded-button text-sm font-semibold whitespace-nowrap">
+                                    <span class="en">Live Demo</span>
+                                    <span class="pt hidden">Demo</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card h-80 relative cursor-pointer" data-category="ai">
+                        <div class="card-front bg-dark-card rounded-lg p-6 h-full">
+                            <img src="/img/tc_cyber_01.png" alt="AI Project" class="w-full h-32 object-cover object-top rounded mb-4">
+                            <h3 class="text-xl font-semibold mb-2 text-primary">
+                                <span class="en">Ethical Haking and Cybersecurity</span>
+                                <span class="pt hidden">Ethical Haking and Cibersegurança</span>
+                            </h3>
+                            <p class="text-gray-300 text-sm">
+                                <span class="en">Defending networks by ethically testing and strengthening cybersecurity against potential attacks.</span>
+                                <span class="pt hidden">Defendendo redes por meio de hacking ético e reforçando a cibersegurança contra possíveis ataques.</span>
+                            </p>
+                        </div>
+                        <div class="card-back bg-primary/10 rounded-lg p-6 h-full flex flex-col justify-center">
+                            <h3 class="text-xl font-semibold mb-4 text-primary">
+                                <span class="en">Tech Stack</span>
+                                <span class="pt hidden">Tecnologias</span>
+                            </h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">Kali Linux</span>
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">Google Dorks</span>
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">Nmap</span>
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">Pentest Tools</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <button class="bg-primary text-black px-4 py-2 !rounded-button text-sm font-semibold whitespace-nowrap">
+                                    <span class="en">View Code</span>
+                                    <span class="pt hidden">Ver Código</span>
+                                </button>
+                                <button class="border border-primary text-primary px-4 py-2 !rounded-button text-sm font-semibold whitespace-nowrap">
+                                    <span class="en">Demo</span>
+                                    <span class="pt hidden">Demo</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card h-80 relative cursor-pointer" data-category="python">
+                        <div class="card-front bg-dark-card rounded-lg p-6 h-full">
+                            <img src="/img/tc_datascience_01.png" alt="Python Project" class="w-full h-32 object-cover object-top rounded mb-4">
+                            <h3 class="text-xl font-semibold mb-2 text-primary">
+                                <span class="en">Data Analysis Tool</span>
+                                <span class="pt hidden">Ferramenta de Análise de Dados</span>
+                            </h3>
+                            <p class="text-gray-300 text-sm">
+                                <span class="en">Python-based tool for data processing and visualization</span>
+                                <span class="pt hidden">Ferramenta baseada em Python para processamento e visualização de dados</span>
+                            </p>
+                        </div>
+                        <div class="card-back bg-primary/10 rounded-lg p-6 h-full flex flex-col justify-center">
+                            <h3 class="text-xl font-semibold mb-4 text-primary">
+                                <span class="en">Tech Stack</span>
+                                <span class="pt hidden">Tecnologias</span>
+                            </h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">Pandas</span>
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">NumPy</span>
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">Matplotlib</span>
+                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">MySQL</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <button class="bg-primary text-black px-4 py-2 !rounded-button text-sm font-semibold whitespace-nowrap">
+                                    <span class="en">View Code</span>
+                                    <span class="pt hidden">Ver Código</span>
+                                </button>
+                                <button class="border border-primary text-primary px-4 py-2 !rounded-button text-sm font-semibold whitespace-nowrap">
+                                    <span class="en">Demo</span>
+                                    <span class="pt hidden">Demo</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 bg-dark-card">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-orbitron font-bold text-center mb-16 text-primary">
+                    <span class="en">Technical Arsenal</span>
+                    <span class="pt hidden">Arsenal Técnico</span>
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-8 text-primary">
+                            <span class="en">Soft Skills</span>
+                            <span class="pt hidden">Competências Socioemocionais</span>
+                        </h3>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300">HTML / CSS / JavaScript</span>
+                                    <span class="text-primary">90%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="skill-bar h-3 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300">Python</span>
+                                    <span class="text-primary">85%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="skill-bar h-3 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300">SQL</span>
+                                    <span class="text-primary">95%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="skill-bar h-3 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300">Cybersecurity</span>
+                                    <span class="text-primary">75%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="skill-bar h-3 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300">AI/Machine Learning</span>
+                                    <span class="text-primary">70%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-3">
+                                    <div class="skill-bar h-3 rounded-full" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-8 text-primary">
+                            <span class="en">Radar</span>
+                            <span class="pt hidden">Radar</span>
+                        </h3>
+                        <div id="skills-chart" class="h-80"></div>
+                    </div>
+                </div>
+                
+                <div class="mt-16">
+                    <h3 class="text-2xl font-semibold mb-8 text-center text-primary">
+                        <span class="en">Technologies & Tools</span>
+                        <span class="pt hidden">Tecnologias e Ferramentas</span>
+                    </h3>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                        <div class="flex flex-col items-center p-4 bg-dark-bg rounded-lg hover:bg-primary/10 transition-colors">
+                            <div class="w-12 h-12 flex items-center justify-center mb-2">
+                                <i class="ri-html5-line ri-2x text-primary"></i>
+                            </div>
+                            <span class="text-sm text-gray-300">HTML5</span>
+                        </div>
+                        
+                        <div class="flex flex-col items-center p-4 bg-dark-bg rounded-lg hover:bg-primary/10 transition-colors">
+                            <div class="w-12 h-12 flex items-center justify-center mb-2">
+                                <i class="ri-css3-line ri-2x text-primary"></i>
+                            </div>
+                            <span class="text-sm text-gray-300">CSS3</span>
+                        </div>
+                        
+                        <div class="flex flex-col items-center p-4 bg-dark-bg rounded-lg hover:bg-primary/10 transition-colors">
+                            <div class="w-12 h-12 flex items-center justify-center mb-2">
+                                <i class="ri-javascript-line ri-2x text-primary"></i>
+                            </div>
+                            <span class="text-sm text-gray-300">JavaScript</span>
+                        </div>
+                        
+                        <div class="flex flex-col items-center p-4 bg-dark-bg rounded-lg hover:bg-primary/10 transition-colors">
+                            <div class="w-12 h-12 flex items-center justify-center mb-2">
+                                <i class="ri-code-line ri-2x text-primary"></i>
+                            </div>
+                            <span class="text-sm text-gray-300">Python</span>
+                        </div>
+                        
+                        <div class="flex flex-col items-center p-4 bg-dark-bg rounded-lg hover:bg-primary/10 transition-colors">
+                            <div class="w-12 h-12 flex items-center justify-center mb-2">
+                                <i class="ri-robot-line ri-2x text-primary"></i>
+                            </div>
+                            <span class="text-sm text-gray-300">AI/ML</span>
+                        </div>
+                        
+                        <div class="flex flex-col items-center p-4 bg-dark-bg rounded-lg hover:bg-primary/10 transition-colors">
+                            <div class="w-12 h-12 flex items-center justify-center mb-2">
+                                <i class="ri-database-line ri-2x text-primary"></i>
+                            </div>
+                            <span class="text-sm text-gray-300">Data Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-orbitron font-bold text-center mb-16 text-primary">
+                    <span class="en">Resume</span>
+                    <span class="pt hidden">Currículo</span>
+                </h2>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <div class="flex justify-center space-x-4">
+                            <button class="bg-primary text-black px-6 py-3 !rounded-button font-semibold hover:bg-primary/80 transition-colors whitespace-nowrap">
+                                <i class="ri-download-line mr-2"></i>
+                                <span class="en">Download Resume (EN)</span>
+                                <span class="pt hidden">Baixar Currículo (EN)</span>
+                            </button>
+                            <button class="border border-primary text-primary px-6 py-3 !rounded-button font-semibold hover:bg-primary/10 transition-colors whitespace-nowrap">
+                                <i class="ri-download-line mr-2"></i>
+                                <span class="en">Download Resume (PT)</span>
+                                <span class="pt hidden">Baixar Currículo (PT)</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-dark-card p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-6 text-primary">
+                                <span class="en">Education</span>
+                                <span class="pt hidden">Educação</span>
+                            </h3>
+                            
+                            <div class="space-y-6">
+                                <div class="border-l-2 border-primary pl-4">
+                                    <h4 class="font-semibold text-white">
+                                        <span class="en">Bachelor in Software Engineering</span>
+                                        <span class="pt hidden">Bacharelado em Engenharia de Software</span>
+                                    </h4>
+                                    <p class="text-gray-300 text-sm">
+                                        <span class="en">Estacio University | 2025 - In progress</span>
+                                        <span class="pt hidden">Universidade Estácio | 2025 - Em progresso</span>
+                                    </p>
+                                    <p class="text-gray-400 text-sm mt-2">
+                                        <span class="en">Focusing on AI, Data Science, and Software Development</span>
+                                        <span class="pt hidden">Foco em IA, Ciência de Dados e Desenvolvimento de Software</span>
+                                    </p>
+                                </div>
+                                
+                                <div class="border-l-2 border-primary pl-4">
+                                    <h4 class="font-semibold text-white">
+                                        <span class="en">Python & AI Tray</span>
+                                        <span class="pt hidden">Trilha Python & IA</span>
+                                    </h4>
+                                    <p class="text-gray-300 text-sm">
+                                        <span class="en">B7Web | 2025 - In progress</span>
+                                        <span class="pt hidden">B7Web | 2025 - Em progresso</span>
+                                    </p>
+                                </div>
+
+                                <div class="border-l-2 border-primary pl-4">
+                                    <h4 class="font-semibold text-white">
+                                        <span class="en">Python for Data Science</span>
+                                        <span class="pt hidden">Python para Ciência de Dados</span>
+                                    </h4>
+                                    <p class="text-gray-300 text-sm">
+                                        <span class="en">Eduliv | 2025 - In progress</span>
+                                        <span class="pt hidden">Eduliv | 2025 - Em progresso</span>
+                                    </p>
+                                </div>
+                                
+                                  <div class="border-l-2 border-primary pl-4">
+                                    <h4 class="font-semibold text-white">
+                                        <span class="en">Cyber Security</span>
+                                        <span class="pt hidden">Segurança Cibernética</span>
+                                    </h4>
+                                    <p class="text-gray-300 text-sm">
+                                        <span class="en">TI Academy | 2025 - In progress</span>
+                                        <span class="pt hidden">TI Academy | 2025 - Em progresso</span>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <div class="bg-dark-card p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-6 text-primary">
+                                <span class="en">Experience</span>
+                                <span class="pt hidden">Experiência</span>
+                            </h3>
+                            
+                            <div class="space-y-6">
+                                  <div class="border-l-2 border-primary pl-4">
+                                    <h4 class="font-semibold text-white">
+                                        <span class="en">Freelancer Frontend Developer</span>
+                                        <span class="pt hidden">Desenvolvedor Frontend Freelancer</span>
+                                    </h4>
+                                    <p class="text-gray-300 text-sm">
+                                        <span class="en">Self-employed | 2022 - Present</span>
+                                        <span class="pt hidden">Autônomo | 2022 - Presente</span>
+                                    </p>
+                                
+                                    <p class="text-gray-400 text-sm mt-2">
+                                        <span class="en">Developing responsive web applications using modern technologies</span>
+                                        <span class="pt hidden">Desenvolvimento de aplicações web responsivas utilizando tecnologias modernas</span>
+                                    </p>
+                                </div>
+
+                                <div class="border-l-2 border-primary pl-4">
+                                    <h4 class="font-semibold text-white">
+                                        <span class="en">Freelancer Web Developer</span>
+                                        <span class="pt hidden">Desenvovedor Web Freelancer</span>
+                                    </h4>
+                                    <p class="text-gray-300 text-sm">
+                                        <span class="en">Self-employed | 2007 - Present</span>
+                                        <span class="pt hidden">Autônomo Tech | 2007 - Presente</span>
+                                    </p>
+                                    <p class="text-gray-400 text-sm mt-2">
+                                        <span class="en">Creating custom websites and web applications for clients</span>
+                                        <span class="pt hidden">Criando sites personalizadas para clientes</span>
+                                    </p>
+                                </div>
+
+                                <div class="border-l-2 border-primary pl-4">
+                                    <h4 class="font-semibold text-white">
+                                        <span class="en">Freelancer Computer Technician</span>
+                                        <span class="pt hidden">Técnico de Informática Freelancer</span>
+                                    </h4>
+                                    <p class="text-gray-300 text-sm">
+                                        <span class="en">Self-employed | 2006 - Present</span>
+                                        <span class="pt hidden">Autônomo Tech | 2006 - Presente</span>
+                                    </p>
+                                    <p class="text-gray-400 text-sm mt-2">
+                                        <span class="en">Extensive experience in assembling and maintaining computers, system formatting, software installation and configuration, and LAN network setup.</span>
+                                        <span class="pt hidden">Vivência em montagem e manutenção de computadores, formatação de sistemas, instalação e configuração de softwares e redes LAN.</span>
+                                    </p>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 bg-dark-card p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-6 text-primary">
+                            <span class="en">Last Achievements</span>
+                            <span class="pt hidden">Últimas Conquistas</span>
+                        </h3>
+                        
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="flex items-center space-x-3 p-3 bg-primary/10 rounded-lg">
+                                <div class="w-8 h-8 flex items-center justify-center bg-primary rounded-full">
+                                    <i class="ri-trophy-line text-black"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white text-sm">
+                                        <span class="en">Python on Kagggle.com</span>
+                                        <span class="pt hidden">Pyton no Kagggle.com</span>
+                                    </h4>
+                                    <p class="text-gray-400 text-xs">
+                                        <span class="en">21% Concluded</span>
+                                        <span class="pt hidden">21% Concluído</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3 p-3 bg-primary/10 rounded-lg">
+                                <div class="w-8 h-8 flex items-center justify-center bg-primary rounded-full">
+                                    <i class="ri-star-line text-black"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white text-sm">
+                                        <span class="en">22 Github Repositories</span>
+                                        <span class="pt hidden">22 Repositórios no Github</span>
+                                    </h4>
+                                    <p class="text-gray-400 text-xs">
+                                        <span class="en">Github</span>
+                                        <span class="pt hidden">Github</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3 p-3 bg-primary/10 rounded-lg">
+                                <div class="w-8 h-8 flex items-center justify-center bg-primary rounded-full">
+                                    <i class="ri-rocket-line text-black"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white text-sm">
+                                        <span class="en">Adventurer rank</span>
+                                        <span class="pt hidden">Explorador Tech</span>
+                                    </h4>
+                                    <p class="text-gray-400 text-xs">
+                                        <span class="en">Salesforce CRM</span>
+                                        <span class="pt hidden">Salesforce CRM</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-dark-card">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-orbitron font-bold text-center mb-16 text-primary">
+                    <span class="en">Contact the Matrix</span>
+                    <span class="pt hidden">Contate a Matrix</span>
+                </h2>
+                
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6 text-primary">
+                            <span class="en">Get in Touch</span>
+                            <span class="pt hidden">Entre em Contato</span>
+                        </h3>
+                        
+                        <p class="text-gray-300 mb-8">
+                            <span class="en">
+                                Ready to embark on a new adventure? Whether you want to discuss a project, 
+                                collaborate on something amazing, or just talk about the latest in games and pop culture, 
+                                I'm always up for a good conversation while we drink some milk... or If you don't mind I will take a glass of orange juice over ice!
+                            </span>
+                            <span class="pt hidden">
+                                Pronto para embarcar em uma nova aventura? Seja para discutir um projeto, 
+                                colaborar em algo incrível, ou apenas conversar sobre as últimas novidades em sobre games e cultura pop, 
+                                estou sempre pronto para uma boa conversa enquanto tomamos um leite... mas sinceramente eu prefiro um suco de laranja!
+                            </span>
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full">
+                                    <i class="ri-mail-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-300">eduardocarneiro83@gmail.com</span>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full">
+                                    <i class="ri-phone-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-300">+55 (98) 99965-8539</span>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full">
+                                    <i class="ri-map-pin-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-300">São Luís/MA, Brasil</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-lg font-semibold mb-4 text-primary">
+                                <span class="en">Wait! Follow me!</span>
+                                <span class="pt hidden">Sigam me os bons!</span>
+                            </h4>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/DucaBarros" class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full hover:bg-primary/30 transition-colors">
+                                    <i class="ri-github-line text-primary"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/eduardo-barros-dev-software-translator/" class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full hover:bg-primary/30 transition-colors">
+                                    <i class="ri-linkedin-line text-primary"></i>
+                                </a>
+                                <a href="https://itch.io/profile/ducabarros" class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full hover:bg-primary/30 transition-colors">
+                                    <i class="ri-gamepad-line text-primary"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ducabarros/" class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full hover:bg-primary/30 transition-colors">
+                                    <i class="ri-instagram-line text-primary"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">
+                                    <span class="en">Name</span>
+                                    <span class="pt hidden">Nome</span>
+                                </label>
+                                <input type="text" class="w-full px-4 py-3 bg-dark-bg border border-gray-600 rounded-lg text-white focus:border-primary focus:outline-none transition-colors" placeholder="Your name / Seu nome">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">
+                                    <span class="en">Email</span>
+                                    <span class="pt hidden">E-mail</span>
+                                </label>
+                                <input type="email" class="w-full px-4 py-3 bg-dark-bg border border-gray-600 rounded-lg text-white focus:border-primary focus:outline-none transition-colors" placeholder="your email / seu e-mail">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">
+                                    <span class="en">Subject</span>
+                                    <span class="pt hidden">Assunto</span>
+                                </label>
+                                <input type="text" class="w-full px-4 py-3 bg-dark-bg border border-gray-600 rounded-lg text-white focus:border-primary focus:outline-none transition-colors" placeholder="Project collaboration / Colaboração em projeto">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">
+                                    <span class="en">Message</span>
+                                    <span class="pt hidden">Mensagem</span>
+                                </label>
+                                <textarea rows="5" class="w-full px-4 py-3 bg-dark-bg border border-gray-600 rounded-lg text-white focus:border-primary focus:outline-none transition-colors resize-none" placeholder="Tell me about your project... / Conte-me sobre seu projeto..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary text-black py-3 !rounded-button font-semibold hover:bg-primary/80 transition-colors whitespace-nowrap">
+                                <span class="en">Send Message</span>
+                                <span class="pt hidden">Enviar Mensagem</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <!--------------------------------footer-------------------------------->
-    <footer class="copyright">
-        © 2025 Desenvolvido por Duca Barros Web Dev
-        <script src="assets/script.js"></script>
+
+    <footer class="bg-dark-bg py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-medium font-bold text-primary mb-4">
+                        <span class="font-['Pacifico']">Duca Portfolio.Art</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        <span class="en">Crafting digital experiences with the power of code and creativity.</span>
+                        <span class="pt hidden">Criando experiências digitais com o poder do código e criatividade.</span>
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4">
+                        <span class="en">Quick Links</span>
+                        <span class="pt hidden">Links Rápidos</span>
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors">
+                            <span class="en">Home</span>
+                            <span class="pt hidden">Início</span>
+                        </a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors">
+                            <span class="en">About</span>
+                            <span class="pt hidden">Sobre</span>
+                        </a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-primary transition-colors">
+                            <span class="en">Projects</span>
+                            <span class="pt hidden">Projetos</span>
+                        </a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors">
+                            <span class="en">Contact</span>
+                            <span class="pt hidden">Contato</span>
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4">
+                        <span class="en">Technologies</span>
+                        <span class="pt hidden">Tecnologias</span>
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><span class="text-gray-400">JavaScript</span></li>
+                        <li><span class="text-gray-400">Python</span></li>
+                        <li><span class="text-gray-400">AI/ML</span></li>
+                        <li><span class="text-gray-400">Data Science</span></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4">
+                        <span class="en">Have you found all Easter Eggs?</span>
+                        <span class="pt hidden">Encontrou todos os Easter Eggs?</span>
+                        <!--Up, Up, Down, Down, Left, Right, Left, Right, B, A-->
+                    </h4>
+                    <p class="text-gray-400 text-sm mb-4">
+                        <span class="en">Try the Konami Code!</span>
+                        <span class="pt hidden">Tente o Código Konami!</span>
+                    </p>
+                    <div class="flex space-x-2">
+                        <div class="w-6 h-6 flex items-center justify-center bg-primary/20 rounded">
+                            <i class="ri-gamepad-line text-primary text-xs"></i>
+                        </div>
+                        <div class="w-6 h-6 flex items-center justify-center bg-primary/20 rounded">
+                            <i class="ri-movie-line text-primary text-xs"></i>
+                        </div>
+                        <div class="w-6 h-6 flex items-center justify-center bg-primary/20 rounded">
+                            <i class="ri-sword-line text-primary text-xs"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    <span class="en">© 2025 Eduardo Barros. All rights reserved. May the code be with you.</span>
+                    <span class="pt hidden">© 2025 Eduardo Barros. Todos os direitos reservados. Esse é o caminho do código.</span>
+                </p>
+            </div>
+        </div>
     </footer>
+
+    <script id="particles-animation">
+        document.addEventListener('DOMContentLoaded', function() {
+            const particlesContainer = document.getElementById('particles-container');
+            
+            function createParticle() {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
+                particle.style.animationDelay = Math.random() * 5 + 's';
+                particlesContainer.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.remove();
+                }, 25000);
+            }
+            
+            setInterval(createParticle, 200);
+        });
+    </script>
+
+    <script id="theme-language-toggle">
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const langToggle = document.getElementById('lang-toggle');
+            const body = document.body;
+            
+            let currentTheme = 'dark';
+            let currentLang = 'en';
+            
+            themeToggle.addEventListener('click', function() {
+                if (currentTheme === 'dark') {
+                    body.className = body.className.replace('theme-dark', 'theme-light');
+                    themeToggle.innerHTML = '<i class="ri-moon-line ri-lg"></i>';
+                    currentTheme = 'light';
+                } else {
+                    body.className = body.className.replace('theme-light', 'theme-dark');
+                    themeToggle.innerHTML = '<i class="ri-sun-line ri-lg"></i>';
+                    currentTheme = 'dark';
+                }
+            });
+            
+            langToggle.addEventListener('click', function() {
+                const enElements = document.querySelectorAll('.en');
+                const ptElements = document.querySelectorAll('.pt');
+                
+                if (currentLang === 'en') {
+                    enElements.forEach(el => el.classList.add('hidden'));
+                    ptElements.forEach(el => el.classList.remove('hidden'));
+                    currentLang = 'pt';
+                } else {
+                    enElements.forEach(el => el.classList.remove('hidden'));
+                    ptElements.forEach(el => el.classList.add('hidden'));
+                    currentLang = 'en';
+                }
+            });
+        });
+    </script>
+
+    <script id="project-filter">
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.dataset.filter;
+                    
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active', 'bg-primary', 'text-black');
+                        btn.classList.add('text-gray-300');
+                    });
+                    
+                    this.classList.add('active', 'bg-primary', 'text-black');
+                    this.classList.remove('text-gray-300');
+                    
+                    projectCards.forEach(card => {
+                        if (filter === 'all' || card.dataset.category === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+    <script id="skills-chart">
+        document.addEventListener('DOMContentLoaded', function() {
+            const chartDom = document.getElementById('skills-chart');
+            const myChart = echarts.init(chartDom);
+            
+            const option = {
+                animation: false,
+                radar: {
+                    indicator: [
+                        { name: 'JavaScript', max: 100 },
+                        { name: 'Python', max: 100 },
+                        { name: 'HTML/CSS', max: 100 },
+                        { name: 'AI/ML', max: 100 },
+                        { name: 'Data Science', max: 100 },
+                        { name: 'Problem Solving', max: 100 }
+                    ],
+                    axisLine: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.2)'
+                        }
+                    },
+                    splitLine: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        }
+                    },
+                    axisLabel: {
+                        color: '#e0e6ed'
+                    },
+                    name: {
+                        textStyle: {
+                            color: '#e0e6ed'
+                        }
+                    }
+                },
+                series: [{
+                    type: 'radar',
+                    data: [{
+                        value: [90, 85, 95, 70, 75, 88],
+                        areaStyle: {
+                            color: 'rgba(0, 255, 157, 0.1)'
+                        },
+                        lineStyle: {
+                            color: '#00ff9d'
+                        },
+                        itemStyle: {
+                            color: '#00ff9d'
+                        }
+                    }]
+                }]
+            };
+            
+            myChart.setOption(option);
+        });
+    </script>
+
+    <script id="mobile-menu">
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.hidden.md\\:flex');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+    <script id="smooth-scroll">
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="konami-code">
+        document.addEventListener('DOMContentLoaded', function() {
+            const konamiCode = [
+                'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown',
+                'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight',
+                'KeyB', 'KeyA'
+            ];
+            let userInput = [];
+            
+            document.addEventListener('keydown', function(e) {
+                userInput.push(e.code);
+                
+                if (userInput.length > konamiCode.length) {
+                    userInput.shift();
+                }
+                
+                if (userInput.length === konamiCode.length) {
+                    if (userInput.every((key, index) => key === konamiCode[index])) {
+                        alert('🎮 Easter Egg Activated! Welcome to the Matrix, Neo! 🎮');
+                        document.body.style.filter = 'hue-rotate(180deg)';
+                        setTimeout(() => {
+                            document.body.style.filter = 'none';
+                        }, 3000);
+                        userInput = [];
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
