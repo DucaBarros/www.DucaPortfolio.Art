@@ -58,7 +58,8 @@
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="text-2xl font-medium font-bold text-primary">
-                    <span class="font-['Pacifico']">Duca Portfolio.Art</span>
+                    <span class="en font-['Pacifico']">Professional Portfolio</span>
+                    <span class="pt hidden font-['Pacifico']">Portfólio Profissional</span>
                     
                 </div>
                 
@@ -209,7 +210,7 @@
                     </div>
                     
                     <div class="relative">
-                        <img src="./img/duca+select-cibersecurity.png" alt="WhoAmI" class="w-full rounded-lg object-cover object-top">
+                        <img src="./img/duca+select-cibersecurity-dark.png" alt="WhoAmI" class="w-full rounded-lg object-cover object-top">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark-card/50 to-transparent rounded-lg"></div>
                     </div>
                 </div>
@@ -246,8 +247,9 @@
                 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="project-card h-80 relative cursor-pointer" data-category="web">
-                        <div class="card-front bg-dark-card rounded-lg p-6 h-full">
-                            <img src="./img/tc_back.png" alt="Web Dev Back" class="w-full h-200 object-cover object-top rounded mb-10">
+                        <div class="card-front bg-dark-card rounded-lg p-6 h-max">
+                            <!--RPG Trading Card BACK WEB DEV-->
+                            <img src="./img/tc_back.png" alt="Web Dev Back" class="w-full h-full object-cover object-top rounded mb-10">
                             <h3 class="text-xl font-semibold mb-2 text-primary">
                                 <span class="en">Responsive Webpage</span>
                                 <span class="pt hidden">Website Responsivo</span>
@@ -257,13 +259,14 @@
                                 <span class="pt hidden">Aplicação web moderna construída com HTML, CSS e JavaScript</span>
                             </p>
                         </div>
-                        <div class="card-back bg-primary/10 rounded-lg p-6 h-full flex flex-col justify-center">
+                        <div class="card-back bg-primary/10 rounded-lg p-6 h-max flex flex-col justify-center">
+                            <!--RPG Trading Card FRONT WEB DEV-->
+                            <img src="./img/tc_webdev_01.png" alt="Web Dev Front" class="w-full h-max object-cover object-top rounded mb-10">
                             <h3 class="text-xl font-semibold mb-4 text-primary">
                                 <span class="en">Tech Stack</span>
                                 <span class="pt hidden">Tecnologias</span>
                             </h3>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <img src="./img/tc_webdev_01.png" alt="Web Dev Front" class="w-full h-200 object-cover object-top rounded mb-10">
                                 <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">HTML5</span>
                                 <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">CSS3</span>
                                 <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
@@ -283,8 +286,9 @@
                     </div>
                     
                     <div class="project-card h-80 relative cursor-pointer" data-category="ai">
-                        <div class="card-front bg-dark-card rounded-lg p-6 h-full">
-                            <img src="./img/tc_cyber_01.png" alt="Cybersecurity" class="w-full h-200 object-cover object-top rounded mb-10">
+                        <div class="card-front bg-dark-card rounded-lg p-6 h-max">
+                            <!--RPG Trading Card BACK CIBERSECURITY-->
+                            <img src="./img/tc_back.png" alt="Web Dev Back" class="w-full h-full object-cover object-top rounded mb-10">
                             <h3 class="text-xl font-semibold mb-2 text-primary">
                                 <span class="en">Ethical Haking and Cybersecurity</span>
                                 <span class="pt hidden">Ethical Haking and Cibersegurança</span>
@@ -294,7 +298,9 @@
                                 <span class="pt hidden">Defendendo redes por meio de hacking ético contra possíveis ataques.</span>
                             </p>
                         </div>
-                        <div class="card-back bg-primary/10 rounded-lg p-6 h-full flex flex-col justify-center">
+                        <div class="card-back bg-primary/10 rounded-lg p-6 h-max flex flex-col justify-center">
+                            <!--RPG Trading Card FRONT CIBERSECURITY-->
+                            <img src="./img/tc_cyber_01.png" alt="Cybersecurity Front" class="w-full h-max object-cover object-top rounded mb-10">
                             <h3 class="text-xl font-semibold mb-4 text-primary">
                                 <span class="en">Tech Stack</span>
                                 <span class="pt hidden">Tecnologias</span>
@@ -311,8 +317,8 @@
                             </div>
                             <div class="flex space-x-4">
                                 <button class="bg-primary text-black px-4 py-2 !rounded-button text-sm font-semibold whitespace-nowrap">
-                                    <span class="en"><a href="https://www.kaggle.com/ducabarros" target="_blank">HackerOne Profile</a></span>
-                                    <span class="pt hidden"><a href="https://www.kaggle.com/ducabarros" target="_blank">Perfil HackerOne</a></span>
+                                    <span class="en"><a href="https://hackerone.com/dante_cmcz" target="_blank">HackerOne Profile</a></span>
+                                    <span class="pt hidden"><a href="https://hackerone.com/dante_cmcz" target="_blank">Perfil HackerOne</a></span>
                                 </button>
                                 <button class="border border-primary text-primary px-4 py-2 !rounded-button text-sm font-semibold whitespace-nowrap">
                                     <span class="en">+</span>
@@ -322,9 +328,10 @@
                         </div>
                     </div>
                     
-                    <div class="project-card h-p relative cursor-pointer" data-category="python">
-                        <div class="card-front bg-dark-card rounded-lg p-6 h-full">
-                            <img src="./img/tc_datascience_01.png" alt="Data Science" class="w-full h-200 object-cover object-top rounded mb-8">
+                    <div class="project-card h-80 relative cursor-pointer" data-category="python">
+                        <div class="card-front bg-dark-card rounded-lg p-6 h-max">
+                            <!--RPG Trading Card BACK DATA SCIENCE-->
+                            <img src="./img/tc_back.png" alt="Data Science" class="w-full h-full object-cover object-top rounded mb-10">
                             <h3 class="text-xl font-semibold mb-2 text-primary">
                                 <span class="en">Data Analysis Tool</span>
                                 <span class="pt hidden">Ferramenta de Análise de Dados</span>
@@ -334,7 +341,9 @@
                                 <span class="pt hidden">Ferramenta baseada em Python para processamento e visualização de dados</span>
                             </p>
                         </div>
-                        <div class="card-back bg-primary/10 rounded-lg p-6 h-full flex flex-col justify-center">
+                        <div class="card-back bg-primary/10 rounded-lg p-6 h-max flex flex-col justify-center">
+                             <!--RPG Trading Card FRONT DATA SCIENCE-->
+                            <img src="./img/tc_datascience_01.png" alt="Data Science" class="w-full h-full object-cover object-top rounded mb-10">
                             <h3 class="text-xl font-semibold mb-4 text-primary">
                                 <span class="en">Tech Stack</span>
                                 <span class="pt hidden">Tecnologias</span>
@@ -532,8 +541,8 @@
                                         <span class="pt hidden">Universidade Estácio | 2025 - Em progresso</span>
                                     </p>
                                     <p class="text-gray-400 text-sm mt-2">
-                                        <span class="en">Focusing on AI, Data Science, and Software Development</span>
-                                        <span class="pt hidden">Foco em IA, Ciência de Dados e Desenvolvimento de Software</span>
+                                        <span class="en">Cybersecurity, Network, Cloud, Software Development Process.</span>
+                                        <span class="pt hidden">Cibersegurança, Redes, Nuvem, Processo de Desenvolvimento de Software.</span>
                                     </p>
                                 </div>
                                 
@@ -561,8 +570,8 @@
                                 
                                   <div class="border-l-2 border-primary pl-4">
                                     <h4 class="font-semibold text-white">
-                                        <span class="en">Cyber Security</span>
-                                        <span class="pt hidden">Segurança Cibernética</span>
+                                        <span class="en">Advanced Ethical Hacking & Cybersecurity</span>
+                                        <span class="pt hidden">Ethical Hacking e Cibersegurança Avançado</span>
                                     </h4>
                                     <p class="text-gray-300 text-sm">
                                         <span class="en">TI Academy | 2025 - In progress</span>
@@ -643,12 +652,12 @@
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-white text-sm">
-                                        <span class="en">Python on Kagggle.com</span>
-                                        <span class="pt hidden">Pyton no Kagggle.com</span>
+                                        <span class="en">Cybersecurity Fundamentals & Digital Forensic Expert</span>
+                                        <span class="pt hidden">Fundamentos de Ciberseguranca e Perito Forense Digital</span>
                                     </h4>
                                     <p class="text-gray-400 text-xs">
-                                        <span class="en">21% Concluded</span>
-                                        <span class="pt hidden">21% Concluído</span>
+                                        <span class="en">100% Concluded</span>
+                                        <span class="pt hidden">100% Concluído</span>
                                     </p>
                                 </div>
                             </div>
@@ -813,7 +822,8 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <div class="text-2xl font-medium font-bold text-primary mb-4">
-                        <span class="font-['Pacifico']">Duca Portfolio.Art</span>
+                        <span class="en font-['Pacifico']">Professional Portfolio</span>
+                        <span class="pt hidden font-['Pacifico']">Portfólio Profissional</span>
                     </div>
                     <p class="text-gray-400 text-sm">
                         <span class="en">Crafting digital experiences with the power of code and creativity.</span>
