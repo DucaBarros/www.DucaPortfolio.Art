@@ -55,7 +55,7 @@ body {
     backface-visibility: hidden;
     position: absolute;
     width: 100%;
-    height: 200%;
+    height: 100%;
 }
 
 .card-back {
