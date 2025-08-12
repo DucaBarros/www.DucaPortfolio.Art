@@ -112,7 +112,7 @@
             <div class="absolute inset-0 matrix-bg"></div>
             <div class="container mx-auto px-6 text-center relative z-10">
                 <div class="mb-8">
-                    <div class="w-48 h-48 mx-auto mb-8 hex-clip overflow-hidden neon-glow">
+                    <div class="w-48 h-48 mx-auto mt-20 mb-8 hex-clip overflow-hidden neon-glow">
                         <img src="img/duca-picture-01.png" alt="Foto Duca" class="w-full h-full object-cover object-top">
                     </div>
                 </div>
@@ -139,11 +139,16 @@
                         <i class="ri-robot-line ri-2x text-primary"></i>
                     </div>
                 </div>
-                
+
+                <div class="text-2xl font-medium font-bold text-primary mb-10">
+                    <span class="en font-['Pacifico']">Welcome to my Hub</span><br> 
+                    <span class="pt hidden font-['Pacifico']">Bem-vindos ao meu Hub</span><br> 
+                </div>
+
                 <button class="bg-primary text-black px-8 py-4 !rounded-button font-semibold hover:bg-primary/80 transition-colors whitespace-nowrap">
-                    <span class="en">Explore My Universe</span>
-                    <span class="pt hidden">Explore Meu Universo</span>
+                    <a href="#about"><span> ➡  Start  ⬅ </span></a>
                 </button>
+                <img src="./img/Duca_8-bit_02_nb_500x781.png" alt="8-bit Duca" class="w-20 mx-auto mt-4">
             </div>
         </section>
 
@@ -227,20 +232,20 @@
                 </h2>
                 
                 <div class="flex justify-center mb-12">
-                    <div class="flex space-x-4 bg-dark-card p-2 rounded-full>
-                        <button class="filter-btn active px-6 py-2 rounded-full bg-primary text-black font-semibold whitespace-nowrap" data-filter="all">
-                            <span class="en">All</span>
-                            <span class="pt hidden">Todos</span>
+                    <div class="flex space-x-2 bg-dark-card p-2 rounded-full">
+                        <button class="filter-btn active px-2 md:px-4 py-2 rounded-full bg-primary text-black font-semibold whitespace-nowrap" data-filter="all">
+                            <span class="en p-2">All</span>
+                            <span class="pt hidden p-2">Todos</span>
                         </button>
-                        <button class="filter-btn px-6 py-2 rounded-full text-gray-300 hover:text-primary transition-colors whitespace-nowrap" data-filter="web">
+                        <button class="filter-btn px-2 md:px-4 py-2 rounded-full text-gray-300 hover:text-primary transition-colors whitespace-nowrap" data-filter="web">
                             <span class="en">Web Dev</span>
                             <span class="pt hidden">Web Dev</span>
                         </button>
-                        <button class="filter-btn px-6 py-2 rounded-full text-gray-300 hover:text-primary transition-colors whitespace-nowrap" data-filter="ai">
+                        <button class="filter-btn px-2 md:px-4 py-2 rounded-full text-gray-300 hover:text-primary transition-colors whitespace-nowrap" data-filter="ai">
                             <span class="en">Cybersecurity</span>
                             <span class="pt hidden">Cibersegurança</span>
                         </button>
-                        <button class="filter-btn px-6 py-2 rounded-full text-gray-300 hover:text-primary transition-colors whitespace-nowrap" data-filter="python">
+                        <button class="filter-btn px-2 md:px-4 py-2 rounded-full text-gray-300 hover:text-primary transition-colors whitespace-nowrap" data-filter="python">
                             <span class="en">Data Science</span>
                             <span class="pt hidden">Ciência de Dados</span>
                         </button>
@@ -511,20 +516,21 @@
                 
                 <div class="max-w-4xl mx-auto">
                     <div class="text-center mb-12">
-                        <div class="flex justify-center space-x-4">
-                            <button class="bg-primary text-black px-6 py-3 !rounded-button font-semibold hover:bg-primary/80 transition-colors whitespace-nowrap">
-                                <i class="ri-download-line mr-2"></i>
+                        <div class="flex justify-center flex-wrap gap-4">
+                            <button class="bg-primary text-black mx-auto px-6 py-3 !rounded-button font-semibold hover:bg-primary/80 transition-colors whitespace-nowrap">
+                                <i class="ri-download-line mx-auto"></i>
                                 <span class="en">Download Resume (EN)</span>
                                 <span class="pt hidden">Baixar Currículo (EN)</span>
                             </button>
-                            <button class="border border-primary text-primary px-6 py-3 !rounded-button font-semibold hover:bg-primary/10 transition-colors whitespace-nowrap">
-                                <i class="ri-download-line mr-2"></i>
+                            <button class="border border-primary text-primary mx-auto px-6 py-3 !rounded-button font-semibold hover:bg-primary/10 transition-colors whitespace-nowrap">
+                                <i class="ri-download-line mx-auto"></i>
                                 <span class="en">Download Resume (PT)</span>
                                 <span class="pt hidden">Baixar Currículo (PT)</span>
                             </button>
                         </div>
                     </div>
                     
+                    <!--Education Area-->
                     <div class="grid md:grid-cols-2 gap-8">
                         <div class="bg-dark-card p-6 rounded-lg">
                             <h3 class="text-xl font-semibold mb-6 text-primary">
@@ -584,6 +590,7 @@
                             </div>
                         </div>
                         
+                        <!--Experience Area-->
                         <div class="bg-dark-card p-6 rounded-lg">
                             <h3 class="text-xl font-semibold mb-6 text-primary">
                                 <span class="en">Experience</span>
@@ -602,8 +609,8 @@
                                     </p>
                                 
                                     <p class="text-gray-400 text-sm mt-2">
-                                        <span class="en">Developing responsive web applications using modern technologies</span>
-                                        <span class="pt hidden">Desenvolvimento de aplicações web responsivas utilizando tecnologias modernas</span>
+                                        <span class="en">Developing responsive web applications utilising modern technologies.</span>
+                                        <span class="pt hidden">Desenvolvimento de aplicações web responsivas utilizando tecnologias modernas.</span>
                                     </p>
                                 </div>
 
@@ -617,8 +624,8 @@
                                         <span class="pt hidden">Autônomo Tech | 2007 - Presente</span>
                                     </p>
                                     <p class="text-gray-400 text-sm mt-2">
-                                        <span class="en">Creating custom websites and web applications for clients</span>
-                                        <span class="pt hidden">Criando sites personalizadas para clientes</span>
+                                        <span class="en">Creating custom websites for clients using HTML & CSS.</span>
+                                        <span class="pt hidden">Criando sites personalizadas para clientes usando HTML e CSS.</span>
                                     </p>
                                 </div>
 
@@ -640,22 +647,25 @@
                             </div>
                         </div>
                     </div>
-                    
+
+                    <!--Last Achievements Area-->
                     <div class="mt-8 bg-dark-card p-6 rounded-lg">
                         <h3 class="text-xl font-semibold mb-6 text-primary">
                             <span class="en">Last Achievements</span>
                             <span class="pt hidden">Últimas Conquistas</span>
                         </h3>
                         
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <div class="flex items-center space-x-3 p-3 bg-primary/10 rounded-lg">
+                        <!--Trophy Achievements Area-->
+                        <div class="grid lg:grid-cols-4 gap-4">
+
+                            <div class="flex items-center space-x-2 p-3 bg-primary/10 rounded-lg">
                                 <div class="w-8 h-8 flex items-center justify-center bg-primary rounded-full">
                                     <i class="ri-trophy-line text-black"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-white text-sm">
-                                        <span class="en">Cybersecurity Fundamentals & Digital Forensic Expert</span>
-                                        <span class="pt hidden">Fundamentos de Ciberseguranca e Perito Forense Digital</span>
+                                        <span class="en">Digital Forensic Expert</span>
+                                        <span class="pt hidden">Perito Forense Digital</span>
                                     </h4>
                                     <p class="text-gray-400 text-xs">
                                         <span class="en">100% Concluded</span>
@@ -663,8 +673,25 @@
                                     </p>
                                 </div>
                             </div>
-                            
-                            <div class="flex items-center space-x-3 p-3 bg-primary/10 rounded-lg">
+
+                            <div class="flex items-center space-x-2 p-3 bg-primary/10 rounded-lg">
+                                <div class="w-8 h-8 flex items-center justify-center bg-primary rounded-full">
+                                    <i class="ri-trophy-line text-black"></i>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-semibold text-white text-sm">
+                                        <span class="en">Cybersecurity Fundamentals</span>
+                                        <span class="pt hidden">Fundamentos de Ciberseguranca</span>
+                                    </h4>
+                                    <p class="text-gray-400 text-xs">
+                                        <span class="en">100% Concluded</span>
+                                        <span class="pt hidden">100% Concluído</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-2 p-3 bg-primary/10 rounded-lg">
                                 <div class="w-8 h-8 flex items-center justify-center bg-primary rounded-full">
                                     <i class="ri-github-line text-black"></i>
                                 </div>
@@ -674,27 +701,25 @@
                                         <span class="pt hidden">25 Repositórios</span>
                                     </h4>
                                     <p class="text-gray-400 text-xs">
-                                        <span class="en">Github</span>
-                                        <span class="pt hidden">Github</span>
+                                        <span>Github</span>
                                     </p>
                                 </div>
                             </div>
-                            
-                            <div class="flex items-center space-x-3 p-3 bg-primary/10 rounded-lg">
+
+                            <div class="flex items-center space-x-2 p-3 bg-primary/10 rounded-lg">
                                 <div class="w-8 h-8 flex items-center justify-center bg-primary rounded-full">
                                     <i class="ri-rocket-line text-black"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-white text-sm">
-                                        <span class="en">Adventurer rank</span>
-                                        <span class="pt hidden">Adventurer rank</span>
+                                        <span>Adventurer rank</span>
                                     </h4>
                                     <p class="text-gray-400 text-xs">
-                                        <span class="en">Salesforce CRM</span>
-                                        <span class="pt hidden">Salesforce CRM</span>
+                                        <span>Salesforce CRM</span>
                                     </p>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -791,6 +816,14 @@
                                 </label>
                                 <input type="email" class="w-full px-4 py-3 bg-dark-bg border border-gray-600 rounded-lg text-white focus:border-primary focus:outline-none transition-colors" placeholder="your email / seu e-mail">
                             </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">
+                                    <span class="en">Phone</span>
+                                    <span class="pt hidden">Telefone</span>
+                                </label>
+                                <input type="tel" class="w-full px-4 py-3 bg-dark-bg border border-gray-600 rounded-lg text-white focus:border-primary focus:outline-none transition-colors" placeholder="Your phone number / Seu Telefone">
+                            </div>
                             
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">
@@ -824,8 +857,8 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <div class="text-2xl font-medium font-bold text-primary mb-4">
-                        <span class="en font-['Pacifico']">Professional</span>
-                        <span class="pt hidden font-['Pacifico']">Portfólio</span>
+                        <span class="en font-['Pacifico']">Eduardo Barros Portfolio</span>
+                        <span class="pt hidden font-['Pacifico']">Portfólio Eduardo Barros</span>
                     </div>
                     <p class="text-gray-400 text-sm">
                         <span class="en">Crafting digital experiences with the power of code and creativity.</span>
@@ -851,6 +884,10 @@
                             <span class="en">Projects</span>
                             <span class="pt hidden">Projetos</span>
                         </a></li>
+                        <li><a href="#resume" class="text-gray-400 hover:text-primary transition-colors">
+                            <span class="en">Resume</span>
+                            <span class="pt hidden">Currículo</span>
+                        </a></li>
                         <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors">
                             <span class="en">Contact</span>
                             <span class="pt hidden">Contato</span>
@@ -864,10 +901,13 @@
                         <span class="pt hidden">Tecnologias</span>
                     </h4>
                     <ul class="space-y-2 text-sm">
-                        <li><span class="text-gray-400">JavaScript</span></li>
+                        <li><span class="text-gray-400 en">Cybersecurity</span></li>
+                        <li><span class="text-gray-400 pt hidden">Cibersegurança<pan></li>
+                        <li><span class="text-gray-400 en">Data Science</span></li>
+                        <li><span class="text-gray-400 pt hidden">Ciência de Dados</span></li>
                         <li><span class="text-gray-400">Python</span></li>
-                        <li><span class="text-gray-400">AI/ML</span></li>
-                        <li><span class="text-gray-400">Data Science</span></li>
+                        <li><span class="text-gray-400 en">AI/ML</span></li>
+                        <li><span class="text-gray-400 pt hidden">IA/ML</span></li>
                     </ul>
                 </div>
                 
