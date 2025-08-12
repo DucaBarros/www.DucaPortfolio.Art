@@ -91,6 +91,7 @@ body {
     100% { transform: translateY(0px); }
 }
 
+/*MATRIX PARTICLE*/
 .particle {
     position: absolute;
     width: 2px;
@@ -98,13 +99,15 @@ body {
     background: var(--accent);
     border-radius: 50%;
     animation: particle-move 20s linear infinite;
+    font-size: 0.5rem;
+    color: var(--accent);
 }
 
 @keyframes particle-move {
-    0% { transform: translateY(100vh) translateX(0); opacity: 0; }
-    10% { opacity: 1; }
+    100% { transform: translateY(100vh) translateX(0); opacity: 0; }
     90% { opacity: 1; }
-    100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
+    10% { opacity: 1; }
+    0% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
 }
 
 .hex-clip {
