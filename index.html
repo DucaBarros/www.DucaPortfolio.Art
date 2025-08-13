@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
     <script>
         tailwind.config = {
             theme: {
@@ -154,18 +155,18 @@
         <section id="about" class="py-20 bg-dark-card">
             <div class="container mx-auto px-6">
                 <h2 class="text-4xl font-orbitron font-bold text-center mb-16 text-primary">
-                    <span class="en">Who Am I</span>
+                    <span class="en">Who I Am</span>
                     <span class="pt hidden">Quem Sou Eu</span>
                 </h2>
 
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                 
-                <!--Ethical Hacker Drawing-->
+                <!--------------------------------------------Ethical Hacker Drawing-------------------------------------------->
                 <div class="relative">
                     <img src="./img/duca+select-cibersecurity-dark.png" alt="WhoAmI" class="w-full rounded-lg object-cover object-top">
                     <div class="absolute inset-0 bg-gradient-to-t from-dark-card/50 to-transparent rounded-lg"></div>
                 </div>
-
+                <!--------------------------------------------About: Who I Am-------------------------------------------->
                     <div>
                         <p class="text-lg mb-6 text-gray-300">
                             <span class="en ">
@@ -227,13 +228,14 @@
             </div>
         </section>
 
-        <section id="projects" class="py-20" my-auto>
+        <!------------------------------------------Project Gallery Section------------------------------------------>
+        <section id="projects" class="py-20">
             <div class="container mx-auto px-6">
                 <h2 class="text-4xl font-orbitron font-bold text-center mb-16 text-primary">
                     <span class="en">Project Gallery</span>
                     <span class="pt hidden">Galeria de Projetos</span>
                 </h2>
-                
+                <!---------------------------------------------Botões---------------------------------------------->
                 <div class="flex justify-center mb-12">
                     <div class="flex space-x-2 bg-dark-card p-2 rounded-full">
                         <button class="filter-btn active px-2 md:px-4 py-2 rounded-full bg-primary text-black font-semibold whitespace-nowrap" data-filter="all">
@@ -255,11 +257,13 @@
                     </div>
                 </div>
                 
+                <!---------------------------------------------RPG Trading Card Section---------------------------------------------->
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="project-card h-80 relative cursor-pointer" data-category="web">
                         <div class="card-front bg-dark-card rounded-lg p-6 h-max">
-                            <!--RPG Trading Card BACK WEB DEV-->
-                            <img src="./img/tc_back.png" alt="Web Dev Back" class="w-full h-full object-cover object-top rounded mb-10">
+
+                            <!---------------------------------RPG Trading Card BACK WEB DEV---------------------------------->
+                            <img src="./img/tc_back.png" alt="Web Dev Back" class="w-full h-full object-cover object-top rounded mx-auto">
                             <h3 class="text-xl font-semibold mb-2 text-primary">
                                 <span class="en">Responsive Webpage</span>
                                 <span class="pt hidden">Website Responsivo</span>
@@ -270,8 +274,9 @@
                             </p>
                         </div>
                         <div class="card-back bg-primary/10 rounded-lg p-6 h-max flex flex-col justify-center">
-                            <!--RPG Trading Card FRONT WEB DEV-->
-                            <img src="./img/tc_webdev_01.png" alt="Web Dev Front" class="w-full h-max object-cover object-top rounded mb-10">
+
+                            <!----------------------------------RPG Trading Card FRONT WEB DEV--------------------------------->
+                            <img src="./img/tc_webdev_01.png" alt="Web Dev Front" class="w-full h-max object-cover object-top rounded mx-auto">
                             <h3 class="text-xl font-semibold mb-4 text-primary">
                                 <span class="en">Tech Stack</span>
                                 <span class="pt hidden">Tecnologias</span>
@@ -295,10 +300,11 @@
                         </div>
                     </div>
                     
+                    <!----------------------------------RPG Trading Card CIBERSECURITY---------------------------------->
                     <div class="project-card h-80 relative cursor-pointer" data-category="ai">
                         <div class="card-front bg-dark-card rounded-lg p-6 h-max">
-                            <!--RPG Trading Card BACK CIBERSECURITY-->
-                            <img src="./img/tc_back.png" alt="Web Dev Back" class="w-full h-full object-cover object-top rounded mb-10">
+                            <!----------------------------------RPG Trading Card BACK CIBERSECURITY---------------------------------->
+                            <img src="./img/tc_back.png" alt="Web Dev Back" class="w-full h-full object-cover object-top rounded mx-auto">
                             <h3 class="text-xl font-semibold mb-2 text-primary">
                                 <span class="en">Ethical Haking and Cybersecurity</span>
                                 <span class="pt hidden">Ethical Haking and Cibersegurança</span>
@@ -309,8 +315,9 @@
                             </p>
                         </div>
                         <div class="card-back bg-primary/10 rounded-lg p-6 h-max flex flex-col justify-center">
-                            <!--RPG Trading Card FRONT CIBERSECURITY-->
-                            <img src="./img/tc_cyber_01.png" alt="Cybersecurity Front" class="w-full h-max object-cover object-top rounded mb-10">
+
+                            <!----------------------------------RPG Trading Card FRONT CIBERSECURITY---------------------------------->
+                            <img src="./img/tc_cyber_01.png" alt="Cybersecurity Front" class="w-full h-max object-cover object-top rounded mx-auto">
                             <h3 class="text-xl font-semibold mb-4 text-primary">
                                 <span class="en">Tech Stack</span>
                                 <span class="pt hidden">Tecnologias</span>
@@ -338,10 +345,12 @@
                         </div>
                     </div>
                     
+                    <!----------------------------------RPG Trading Card DATA SCIENCE---------------------------------->
                     <div class="project-card h-80 relative cursor-pointer" data-category="python">
+                        
+                        <!----------------------------------RPG Trading Card BACK DATA SCIENCE---------------------------------->
                         <div class="card-front bg-dark-card rounded-lg p-6 h-max">
-                            <!--RPG Trading Card BACK DATA SCIENCE-->
-                            <img src="./img/tc_back.png" alt="Data Science" class="w-full h-full object-cover object-top rounded mb-10">
+                            <img src="./img/tc_back.png" alt="Data Science" class="w-full h-full object-cover object-top rounded mx-auto">
                             <h3 class="text-xl font-semibold mb-2 text-primary">
                                 <span class="en">Data Analysis Tool</span>
                                 <span class="pt hidden">Ferramenta de Análise de Dados</span>
@@ -351,9 +360,10 @@
                                 <span class="pt hidden">Ferramenta baseada em Python para processamento e visualização de dados</span>
                             </p>
                         </div>
+                       
+                        <!----------------------------------RPG Trading Card FRONT DATA SCIENCE---------------------------------->
                         <div class="card-back bg-primary/10 rounded-lg p-6 h-max flex flex-col justify-center">
-                             <!--RPG Trading Card FRONT DATA SCIENCE-->
-                            <img src="./img/tc_datascience_01.png" alt="Data Science" class="w-full h-full object-cover object-top rounded mb-10">
+                            <img src="./img/tc_datascience_01.png" alt="Data Science" class="w-full h-full object-cover object-top rounded mx-auto">
                             <h3 class="text-xl font-semibold mb-4 text-primary">
                                 <span class="en">Tech Stack</span>
                                 <span class="pt hidden">Tecnologias</span>
@@ -380,9 +390,40 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="grid grid-cols-1 grid-rows-24"> 
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+               
+            </div>
+        </section>
 
-        <!-- <section id="skills" class="py-200 bg-dark-card">
-            <div class="container mx-auto px-6">
+        <!------------------------------------------Skills Section------------------------------------------>
+        <section id="skills" class="bg-dark-card grid grid-cols-1">
+         
+            <!--<div class="container mx-auto px-6">
                 <h2 class="text-4xl font-orbitron font-bold text-center mb-16 text-primary">
                     <span class="en">Technical Arsenal</span>
                     <span class="pt hidden">Arsenal Técnico</span>
@@ -456,9 +497,9 @@
                         <div id="skills-chart" class="h-80"></div>
                     </div>
                 </div> -->
-                
-                <div class="mt-10">
-                    <h3 class="text-2xl font-semibold mb-8 text-center text-primary">
+                <!------------------------------------------Technology Section------------------------------------------>         
+                <div class="mt-max my-auto pt-150 grid grid-cols-1 mt-16 mb-16">
+                    <h3 class="text-2xl font-semibold mb-8 text-center text-primary my-100">
                         <span class="en">Technologies & Tools</span>
                         <span class="pt hidden">Tecnologias e Ferramentas</span>
                     </h3>
@@ -593,7 +634,7 @@
                             </div>
                         </div>
                         
-                        <!--Experience Area-->
+                        <!-------------------------------------Experience Area-------------------------------------->
                         <div class="bg-dark-card p-6 rounded-lg">
                             <h3 class="text-xl font-semibold mb-6 text-primary">
                                 <span class="en">Experience</span>
@@ -651,14 +692,14 @@
                         </div>
                     </div>
 
-                    <!--Last Achievements Area-->
+                    <!--------------------------------------Last Achievements Area-------------------------------------->
                     <div class="mt-8 bg-dark-card p-6 rounded-lg">
                         <h3 class="text-xl font-semibold mb-6 text-primary">
                             <span class="en">Last Achievements</span>
                             <span class="pt hidden">Últimas Conquistas</span>
                         </h3>
                         
-                        <!--Trophy Achievements Area-->
+                        <!--------------------------------------Trophy Achievements Area-------------------------------------->
                         <div class="grid lg:grid-cols-4 gap-4">
 
                             <div class="flex items-center space-x-2 p-3 bg-primary/10 rounded-lg">
@@ -768,7 +809,7 @@
                                 <div class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full">
                                     <i class="ri-phone-line text-primary"></i>
                                 </div>
-                                <span class="text-gray-300">+55 (98) 99965-8539</span>
+                                <span class="text-gray-300">+00 (00) 0000-0000</span>
                             </div>
                             -->
                             <div class="flex items-center space-x-4">
@@ -947,27 +988,31 @@
         </div>
     </footer>
 
+    <!-- Custom Alert Box -->
+<div id="customAlert" class="alert-overlay">
+    <div class="alert-box">
+        <div id="alertIcon" class="alert-icon">🎮</div>
+        <div id="alertTitle" class="en alert-title">Easter Egg Activated!</div>
+        <div id="alertMessage" class="en alert-message">Welcome to the Matrix!</div>
+        <button class="alert-button"  onclick="closeCustomAlert()">OK</button>
+    </div>
+</div>
+
     <script type="module" src="/assets/script.js"></script>
 
-    <script id="particles-animation">
-        document.addEventListener('DOMContentLoaded', function() {
-            const particlesContainer = document.getElementById('particles-container');
-            
-            function createParticle() {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
-                particle.style.animationDelay = Math.random() * 2 + 's';
-                particlesContainer.appendChild(particle);
-                
-                setTimeout(() => {
-                    particle.remove();
-                }, 25000);
-            }
-            
-            setInterval(createParticle, 200);
-        });
+    <script>
+        // Easter Egg Pop-up Alert
+        function showCustomAlert(title, message, icon) {
+            document.getElementById("alertTitle").textContent = title;
+            document.getElementById("alertMessage").textContent = message;
+            document.getElementById("alertIcon").textContent = icon;
+            document.getElementById("customAlert").style.display = "flex";
+        }
+
+        // Close custom alert
+        function closeCustomAlert() {
+            document.getElementById("customAlert").style.display = "none";
+}
     </script>
 
     <script id="theme-language-toggle">
@@ -1037,62 +1082,6 @@
         });
     </script>
 
-    <script id="skills-chart">
-        document.addEventListener('DOMContentLoaded', function() {
-            const chartDom = document.getElementById('skills-chart');
-            const myChart = echarts.init(chartDom);
-            
-            const option = {
-                animation: false,
-                radar: {
-                    indicator: [
-                        { name: 'JavaScript', max: 100 },
-                        { name: 'Python', max: 100 },
-                        { name: 'HTML/CSS', max: 100 },
-                        { name: 'AI/ML', max: 100 },
-                        { name: 'Data Science', max: 100 },
-                        { name: 'Problem Solving', max: 100 }
-                    ],
-                    axisLine: {
-                        lineStyle: {
-                            color: 'rgba(255, 255, 255, 0.2)'
-                        }
-                    },
-                    splitLine: {
-                        lineStyle: {
-                            color: 'rgba(255, 255, 255, 0.1)'
-                        }
-                    },
-                    axisLabel: {
-                        color: '#e0e6ed'
-                    },
-                    name: {
-                        textStyle: {
-                            color: '#e0e6ed'
-                        }
-                    }
-                },
-                series: [{
-                    type: 'radar',
-                    data: [{
-                        value: [90, 85, 95, 70, 75, 88],
-                        areaStyle: {
-                            color: 'rgba(0, 255, 157, 0.1)'
-                        },
-                        lineStyle: {
-                            color: '#00ff9d'
-                        },
-                        itemStyle: {
-                            color: '#00ff9d'
-                        }
-                    }]
-                }]
-            };
-            
-            myChart.setOption(option);
-        });
-    </script>
-
     <script id="mobile-menu">
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuBtn = document.getElementById('mobile-menu');
@@ -1125,57 +1114,5 @@
         });
     </script>
 
-<!--Matrix Falling Numbers Effect-->
-    <script id="particles-animation">
-        document.addEventListener('DOMContentLoaded', function() {
-            const particlesContainer = document.getElementById('particles-container');
-            
-            function createParticle() {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.textContent = Math.random() > 0.5 ? '1' : '0'; // random 0 or 1
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
-                particle.style.animationDelay = Math.random() * 2 + 's';
-                particlesContainer.appendChild(particle);
-                
-                setTimeout(() => {
-                    particle.remove();
-                }, 25000);
-            }
-            
-            setInterval(createParticle, 200);
-        });
-    </script>
-
-    <script id="konami-code">
-        document.addEventListener('DOMContentLoaded', function() {
-            const konamiCode = [
-                'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown',
-                'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight',
-                'KeyB', 'KeyA'
-            ];
-            let userInput = [];
-            
-            document.addEventListener('keydown', function(e) {
-                userInput.push(e.code);
-                
-                if (userInput.length > konamiCode.length) {
-                    userInput.shift();
-                }
-                
-                if (userInput.length === konamiCode.length) {
-                    if (userInput.every((key, index) => key === konamiCode[index])) {
-                        alert('🎮 Easter Egg Activated! Welcome to the Matrix, Neo! 🎮');
-                        document.body.style.filter = 'hue-rotate(180deg)';
-                        setTimeout(() => {
-                            document.body.style.filter = 'none';
-                        }, 3000);
-                        userInput = [];
-                    }
-                }
-            });
-        });
-    </script>
 </body>
 </html>
