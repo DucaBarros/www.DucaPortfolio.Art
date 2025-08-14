@@ -1,5 +1,5 @@
 **Deployed on:**
-https://app.netlify.com/projects/ducaportfolio/overview
+https://app.netlify.com/
 
 **Website:**
 https://www.ducaportfolio.art/
