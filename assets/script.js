@@ -1,10 +1,10 @@
 // Konami Code Pop-up Alert
 document.addEventListener('DOMContentLoaded', function () {
     const konamiCode = [
-                'KeyX'
-                // 'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown',
-                // 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight',
-                // 'KeyB', 'KeyA'
+                // 'KeyX'
+                'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown',
+                'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight',
+                'KeyB', 'KeyA'
             ];
     let userInput = [];
 

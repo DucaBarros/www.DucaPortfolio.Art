@@ -4,3 +4,4 @@
 - A Genesis 1:1
 - Ω Revelation 22:21
 - Matrix numbers
+- Lightsaber Skill-bar / Progress of Languages I speak
