@@ -162,7 +162,7 @@
                 
                 <!--------------------------------------------Ethical Hacker Drawing-------------------------------------------->
                 <div class="relative">
-                    <img src="./img/duca+select-cibersecurity-dark.png" alt="WhoAmI" class="w-full rounded-lg object-cover object-top">
+                    <img src="./img/duca+select-cibersecurity-dark.png" alt="WhoAmI" class="w-full object-cover object-top">
                     <div class="absolute inset-0 bg-gradient-to-t from-dark-card/50 to-transparent rounded-lg"></div>
                 </div>
                 <!--------------------------------------------About: Who I Am-------------------------------------------->
@@ -219,7 +219,7 @@
                                     <span class="pt hidden">Nerd de Cultura Pop e Games</span>
                                 </span>
                             </div>
-                            <div class="flex items-center space-x-4">
+                            <div class="flex items-center space-x-4 relative">
                                 <img src="./img/Duca_8-bit_02_nb_500x781.png" alt="8-bit Duca" class="w-20 mx-auto mt-4">
                             </div>
                         </div>
@@ -316,64 +316,60 @@
                 </div>
                 
                 <!---------------------------------------------RPG Trading Card Section---------------------------------------------->
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="project-card h-80 relative cursor-pointer" data-category="web">
-                        <div class="card-front bg-dark-card rounded-lg p-6 h-max">
+                <section class="trading-card-bg">
 
-                            <!---------------------------------RPG Trading Card BACK WEB DEV---------------------------------->
-                            <img src="./img/tc_back.png" alt="Web Dev Back" class="w-full h-full object-cover object-top rounded mx-auto">
-                            <h3 class="text-xl font-semibold mb-2 text-primary">
-                                <span class="en">Responsive Webpage</span>
-                                <span class="pt hidden">Website Responsivo</span>
-                            </h3>
-                            <p class="text-gray-300 text-sm">
-                                <span class="en">Modern web application built with HTML, CSS, and JavaScript</span>
-                                <span class="pt hidden">Aplicação web moderna construída com HTML, CSS e JavaScript</span>
-                            </p>
-                        </div>
-                        <div class="card-back bg-primary/10 rounded-lg p-6 h-max flex flex-col justify-center">
-
+                    <div class="grid md:mb-64 md:grid-cols-1 lg:mb-6 lg:grid-cols-3 gap-8">
+                        
+                        <div class="project-card h-80 cursor-pointer" data-category="web">
+                            <div class="card-front bg-dark-card rounded-lg p-6 h-max">
+    
+                                <!---------------------------------RPG Trading Card BACK WEB DEV---------------------------------->
+                                <img src="./img/tc_back.png" alt="Web Dev Back" class="w-full h-full object-top rounded mx-auto">
+                                <h3 class="text-xl font-semibold mb-2 text-primary">
+                                    <span class="en">Responsive Webpage</span>
+                                    <span class="pt hidden">Website Responsivo</span>
+                                </h3>
+                                <p class="text-gray-300 text-sm">
+                                    <span class="en">Modern web application built with HTML, CSS, and JavaScript</span>
+                                    <span class="pt hidden">Aplicação web moderna construída com HTML, CSS e JavaScript</span>
+                                </p>
+                            </div>
+    
                             <!----------------------------------RPG Trading Card FRONT WEB DEV--------------------------------->
-                            <img src="./img/tc_webdev_01.png" alt="Web Dev Front" class="w-full h-max object-cover object-top rounded mx-auto">
-                            <h3 class="text-xl font-semibold mb-4 text-primary">
-                                <span class="en">Tech Stack</span>
-                                <span class="pt hidden">Tecnologias</span>
-                            </h3>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">HTML5</span>
-                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">CSS3</span>
-                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
-                                <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">JavaScript</span>
-                            </div>
-                            <div class="flex space-x-4">
-                                <button class="bg-primary text-black px-4 py-2 !rounded-button text-sm font-semibold whitespace-nowrap">
-                                    <span class="en"><a href="https://github.com/DucaBarros/www.DucaPortfolio.Art" target="_blank">Webpage Code</a></span>
-                                    <span class="pt hidden"><a href="https://github.com/DucaBarros/www.DucaPortfolio.Art" target="_blank">Código da Página</a></span>
-                                </button>
-                                <button class="border border-primary text-primary px-4 py-2 !rounded-button text-sm font-semibold whitespace-nowrap">
-                                    <span class="en"><a href="https://github.com/DucaBarros?tab=repositories" target="_blank">Other Codes</a></span>
-                                    <span class="pt hidden"><a href="https://github.com/DucaBarros?tab=repositories" target="_blank">Outros Códigos</a></span>
-                                </button>
+                            <div class="card-back bg-primary/10 rounded-lg p-6 h-max flex flex-col justify-center">
+                                <img src="./img/tc_webdev_01.png" alt="Web Dev Front" class="w-full h-max  object-top rounded mx-auto">
+                                <h3 class="text-xl font-semibold mb-4 text-primary">
+                                    <span class="en">Tech Stack</span>
+                                    <span class="pt hidden">Tecnologias</span>
+                                </h3>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">HTML5</span>
+                                    <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">CSS3</span>
+                                    <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                                    <span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm">JavaScript</span>
+                                </div>
+                                <div class="flex space-x-4">
+                                    <button class="bg-primary text-black px-4 py-2 !rounded-button text-sm font-semibold">
+                                        <span class="en"><a href="https://github.com/DucaBarros/www.DucaPortfolio.Art" target="_blank">Webpage Code</a></span>
+                                        <span class="pt hidden"><a href="https://github.com/DucaBarros/www.DucaPortfolio.Art" target="_blank">Código da Página</a></span>
+                                    </button>
+                                    <button class="border border-primary text-primary px-4 py-2 !rounded-button text-sm font-semibold whitespace-nowrap">
+                                        <span class="en"><a href="https://github.com/DucaBarros?tab=repositories" target="_blank">Other Codes</a></span>
+                                        <span class="pt hidden"><a href="https://github.com/DucaBarros?tab=repositories" target="_blank">Outros Códigos</a></span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    
+                     
+                </section>
+                
+                <section class="mb-10">
                     <!----------------------------------RPG Trading Card CIBERSECURITY---------------------------------->
-                    <div class="project-card h-80 relative cursor-pointer" data-category="ai">
+                    <div class="project-card h-80 cursor-pointer" data-category="ai">
                         <div class="card-front bg-dark-card rounded-lg p-6 h-max">
+
                             <!----------------------------------RPG Trading Card BACK CIBERSECURITY---------------------------------->
-                            <img src="./img/tc_back.png" alt="Web Dev Back" class="w-full h-full object-cover object-top rounded mx-auto">
+                            <img src="./img/tc_back.png" alt="Cibersecurity Back" class="w-full h-full object-top rounded mx-auto">
                             <h3 class="text-xl font-semibold mb-2 text-primary">
                                 <span class="en">Ethical Haking and Cybersecurity</span>
                                 <span class="pt hidden">Ethical Haking and Cibersegurança</span>
@@ -386,7 +382,7 @@
                         <div class="card-back bg-primary/10 rounded-lg p-6 h-max flex flex-col justify-center">
 
                             <!----------------------------------RPG Trading Card FRONT CIBERSECURITY---------------------------------->
-                            <img src="./img/tc_cyber_01.png" alt="Cybersecurity Front" class="w-full h-max object-cover object-top rounded mx-auto">
+                            <img src="./img/tc_cyber_01.png" alt="Cybersecurity Front" class="w-full h-max object-top rounded mx-auto">
                             <h3 class="text-xl font-semibold mb-4 text-primary">
                                 <span class="en">Tech Stack</span>
                                 <span class="pt hidden">Tecnologias</span>
@@ -417,26 +413,15 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    <div>   </div>
-                    
+                </section>
+                <section class="mb-10">
+
                     <!----------------------------------RPG Trading Card DATA SCIENCE---------------------------------->
-                    <div class="project-card h-80 relative cursor-pointer" data-category="python">
+                    <div class="project-card h-80 cursor-pointer" data-category="python">
                         
                         <!----------------------------------RPG Trading Card BACK DATA SCIENCE---------------------------------->
                         <div class="card-front bg-dark-card rounded-lg p-6 h-max">
-                            <img src="./img/tc_back.png" alt="Data Science" class="w-full h-full object-cover object-top rounded mx-auto">
+                            <img src="./img/tc_back.png" alt="Data Science" class="w-full h-full object-top rounded mx-auto">
                             <h3 class="text-xl font-semibold mb-2 text-primary">
                                 <span class="en">Data Analysis Tool</span>
                                 <span class="pt hidden">Ferramenta de Análise de Dados</span>
@@ -449,7 +434,7 @@
                        
                         <!----------------------------------RPG Trading Card FRONT DATA SCIENCE---------------------------------->
                         <div class="card-back bg-primary/10 rounded-lg p-6 h-max flex flex-col justify-center">
-                            <img src="./img/tc_datascience_01.png" alt="Data Science" class="w-full h-full object-cover object-top rounded mx-auto">
+                            <img src="./img/tc_datascience_01.png" alt="Data Science" class="w-full h-full object-top rounded mx-auto">
                             <h3 class="text-xl font-semibold mb-4 text-primary">
                                 <span class="en">Tech Stack</span>
                                 <span class="pt hidden">Tecnologias</span>
@@ -475,6 +460,8 @@
                     </div>
                 </div>
             </div>
+            </section>    
+                    
         </section>
         <!------------------------------------------BLANK Section------------------------------------------>
         <section>
@@ -555,18 +542,18 @@
                                 </div>
                                 <div class="w-full h-4 flex justify-start items center">
                                     <div class="bg-gray-400 h-4" style="width: 25%"></div>
-                                    <div class="bluesaber-bar h-4 rounded-full" style="width: 55%"></div>
+                                    <div class="bluesaber-bar h-4 rounded-full" style="width: 65%"></div>
                                 </div>
                             </div>
                             
                             <div>
                                 <div class="flex justify-between mb-2">
-                                    <span class="en text-gray-300">Japanese 日本語 (Basic) 40%</span>
-                                    <span class="pt hidden text-gray-300">Japonês 日本語 (Básico) 40%</span>
+                                    <span class="en text-gray-300">Japanese 日本語 (Basic) 30%</span>
+                                    <span class="pt hidden text-gray-300">Japonês 日本語 (Básico) 30%</span>
                                 </div>
                                 <div class="w-full h-4 flex justify-start items center">
                                     <div class="bg-gray-400 h-4" style="width: 25%"></div>
-                                    <div class="redsaber-bar h-4 rounded-full" style="width: 40%"></div>
+                                    <div class="redsaber-bar h-4 rounded-full" style="width: 30%"></div>
                                 </div>
                             </div>
 

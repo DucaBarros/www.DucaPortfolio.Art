@@ -57,6 +57,10 @@ body {
     box-shadow: 0 0 20px rgba(100, 250, 100, 0.795);
 }
 
+.trading-card-bg {
+    height:max-content;
+}
+
 .project-card {
     transform-style: preserve-3d;
     transition: transform 0.6s;
