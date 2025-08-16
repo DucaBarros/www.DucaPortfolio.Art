@@ -140,7 +140,7 @@
                     </div>
                 </div>
 
-                <div class="text-2xl font-medium font-bold text-primary mb-10">
+                <div class="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-medium font-bold text-primary mb-10">
                     <span class="en font-['Pacifico']">Welcome Abord</span><br> 
                     <span class="pt hidden font-['Pacifico']">Bem-vindos a Bordo</span><br> 
                 </div>
@@ -153,11 +153,8 @@
 
         <section id="about" class="py-20 bg-dark-card">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-orbitron font-bold text-center mb-16 text-primary">
-                    <span class="en">Who I Am</span>
-                    <span class="pt hidden">Quem Sou Eu</span>
-                </h2>
-
+                <h2 class="text-4xl font-orbitron font-bold text-center mb-16 text-primary">WhoAmI</h2>
+                
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                 
                 <!--------------------------------------------Ethical Hacker Drawing-------------------------------------------->
@@ -289,7 +286,7 @@
         <!------------------------------------------Project Gallery Section------------------------------------------>
         <section id="projects" class="">
             <div class="">
-                <h2 class="text-4xl font-orbitron font-bold text-center mb-16 text-primary">
+                <h2 class="text-4xl font-orbitron font-bold text-center mt-16 mb-16 text-primary">
                     <span class="en">Project Gallery</span>
                     <span class="pt hidden">Galeria de Projetos</span>
                 </h2>
@@ -345,61 +342,86 @@
                     }
                 </style>
 
-        <section class="min-h-screen flex items-center justify-center p-4">
+            <section class="min-h-screen flex items-center justify-center p-4">
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
-                
-                <!-- Trading Card 1: Web Development -->
-                <div class="card-container relative w-full h-64 cursor-pointer" onclick="flipCard(this)">
-                <div class="card relative w-full h-full">
-                    <div class="card-face bg-blue-500 text-white text-2xl font-bold">
-                    Web Development
-                    </div>
-                    <div class="card-face card-back bg-blue-700 text-white text-center">
-                    HTML, CSS, JavaScript, Frameworks, Responsive Design
-                    </div>
-                </div>
-                </div>
+                <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-7xl place-items-center">
+                    
+                    <!-------------------------------------- Trading Card 1: Web Development -------------------------------------->
+                    
+                    <div class="card-container relative sm:h-max sm:max-w-96 w-full h-full mb-80 mt-60 cursor-pointer" onclick="flipCard(this)" data-category="web">
+                        <div class="text-1xl font-orbitron font-bold text-center mb-8">
+                            <span class="en">Web Development</span>
+                            <span class="pt hidden">Desenvolvimento Web</span>
+                        </div>
 
-                <!-- Trading Card 2: Cybersecurity -->
-                <div class="card-container relative w-full h-64 cursor-pointer" onclick="flipCard(this)">
-                <div class="card relative w-full h-full">
-                    <div class="card-face bg-green-500 text-white text-2xl font-bold">
-                    Cybersecurity
-                    </div>
-                    <div class="card-face card-back bg-green-700 text-white text-center">
-                    Network Security, Ethical Hacking, Encryption
-                    </div>
-                </div>
-                </div>
-
-                <!-- Trading Card 3: Data Science -->
-                <div class="card-container relative w-full h-64 cursor-pointer" onclick="flipCard(this)">
-                <div class="card relative w-full h-full">
-                    <div class="card-face bg-purple-500 text-white text-2xl font-bold">
-                    Data Science
-                    </div>
-                    <div class="card-face card-back bg-purple-700 text-white text-center">
-                    Python, Machine Learning, Data Visualization
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <!--Script for Flipping Trading Cards-->
-            <script>
-                function flipCard(element) {
-                element.querySelector('.card').classList.toggle('flipped');
-                }
-            </script>
-                            
-        </section>                                  
+                        <!--------------------------------- Front Card 1: Web Development --------------------------------->
+                        <div class="card relative w-full h-full">
+                            <div class="card-front text-white text-2xl font-bold">
+                                <img src="./img/tc_back.png" alt="Web Dev Back" class="object-top rounded mx-auto sm:h-card-max">
+                            </div>
                         
+                        <!--------------------------------- Back Card 1: Web Development --------------------------------->
+                        <div class="card-back text-white text-center">
+                            <img src="./img/tc_webdev_01.png" alt="Web Dev Front" class="object-top rounded mx-auto sm:h-card-max">
+                        </div>
+                    </div>    
+                </div>
+                
+                
+                    
+                    <!-------------------------------------- Trading Card 2: Cybersecurity -------------------------------------->
+                    
+                    <div class="card-container relative sm:h-max sm:max-w-96 w-full h-full mb-80 mt-60 cursor-pointer" onclick="flipCard(this)" data-category="ai">
+                        <div class="text-1xl font-orbitron font-bold text-center mb-8">
+                            <span class="en"> Cybersecurity</span>
+                            <span class="pt hidden">Cibersegurança</span>
+                        </div>
 
+                        <!--------------------------------- Front Card 2: Cybersecurity --------------------------------->
+                        <div class="card relative w-full h-full">
+                            <div class="card-front text-white text-2xl font-bold">
+                                <img src="./img/tc_back.png" alt="Web Dev Back" class="object-top rounded mx-auto sm:h-card-max">
+                            </div>
+                        
+                        <!--------------------------------- Back Card 2: Cybersecurity --------------------------------->
+                        <div class="card-back text-white text-center">
+                            <img src="./img/tc_cyber_01.png" alt="Web Dev Front" class="object-top rounded mx-auto sm:h-card-max">
+                        </div>
+                    </div>    
+                </div>
+                
+                    
+                    <!-------------------------------------- Trading Card 3: Data Science -------------------------------------->
+                    
+                    <div class="card-container relative sm:h-max sm:max-w-96 w-full h-full mb-80 mt-60 cursor-pointer" onclick="flipCard(this)" data-category="python">
+                        <div class="text-1xl font-orbitron font-bold text-center mb-8">
+                            <span class="en"> Data Science</span>
+                            <span class="pt hidden">Ciência de Dados</span>
+                        </div>
 
+                        <!--------------------------------- Front Card 3: Data Science --------------------------------->
+                        <div class="card relative w-full h-full">
+                            <div class="card-front text-white text-2xl font-bold">
+                                <img src="./img/tc_back.png" alt="Web Dev Back" class="object-top rounded mx-auto sm:h-card-max">
+                            </div>
+                        
+                        <!--------------------------------- Back Card 3: Data Science --------------------------------->
+                        <div class="card-back text-white text-center">
+                            <img src="./img/tc_datascience_01.png" alt="Web Dev Front" class="object-top rounded mx-auto sm:h-card-max">
+                        </div>
+                    </div>    
+                </div>
+                    
 
-                    </div>
-            </div>    
+                <!--Script for Flipping Trading Cards-->
+                <script>
+                    function flipCard(element) {
+                    element.querySelector('.card').classList.toggle('flipped');
+                    }
+                </script>
+                                
+            </section>                                  
+                         
                     
         </section>
         <!------------------------------------------BLANK Section------------------------------------------>
