@@ -311,36 +311,7 @@
                         </button>
                     </div>
                 </div>
-                
-                <style>
-                    /* Perspective for the flipping effect */
-                    .card-container {
-                    perspective: 1000px;
-                    }
 
-                    .card {
-                        transform-style: preserve-3d;
-                        transition: transform 0.6s;
-                    }
-
-                    .flipped {
-                        transform: rotateY(180deg);
-                    }
-                    .card-face {
-                        backface-visibility: hidden;
-                        position: absolute;
-                        inset: 0;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 1rem;
-                        border-radius: 0.5rem;
-                    }
-
-                    .card-back {
-                        transform: rotateY(180deg);
-                    }
-                </style>
 
             <section class="min-h-screen flex items-center justify-center p-4">
 
@@ -359,7 +330,7 @@
                             <div class="card-front text-white text-2xl font-bold">
                                 <img src="./img/tc_back.png" alt="Web Dev Back" class="object-top rounded mx-auto sm:h-card-max">
                             </div>
-                        
+                    
                         <!--------------------------------- Back Card 1: Web Development --------------------------------->
                         <div class="card-back text-white text-center">
                             <img src="./img/tc_webdev_01.png" alt="Web Dev Front" class="object-top rounded mx-auto sm:h-card-max">
@@ -409,9 +380,13 @@
                         <div class="card-back text-white text-center">
                             <img src="./img/tc_datascience_01.png" alt="Web Dev Front" class="object-top rounded mx-auto sm:h-card-max">
                         </div>
-                    </div>    
-                </div>
+                        
+                    </div>
                     
+                    
+                    
+
+                </div>      
 
                 <!--Script for Flipping Trading Cards-->
                 <script>

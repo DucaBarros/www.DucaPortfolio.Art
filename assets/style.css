@@ -133,6 +133,34 @@ body {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
+   /* Perspective for the flipping effect */
+                    .card-container {
+                    perspective: 1000px;
+                    }
+
+                    .card {
+                        transform-style: preserve-3d;
+                        transition: transform 0.6s;
+                    }
+
+                    .flipped {
+                        transform: rotateY(180deg);
+                    }
+                    .card-face {
+                        backface-visibility: hidden;
+                        position: absolute;
+                        inset: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 1rem;
+                        border-radius: 0.5rem;
+                    }
+
+                    .card-back {
+                        transform: rotateY(180deg);
+                    }
+
 
 /*KONAMI CODE ALERT*/
 
